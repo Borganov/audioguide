@@ -7,3 +7,4 @@ class Activity(models.Model):
     img = models.ImageField()
     state = models.BooleanField()
     date = models.DateTimeField('date published')
+    lang = models.CharField(max_length=2)
