@@ -1,5 +1,6 @@
-Create a test_data directory and run the following commands to export your database to a database agnostic json file:
-python manage.py dumpdata > test_data/test_file_1.json
+Create a test_data directory and run the following commands to export
+your database to a database agnostic json file (replace yyyymmdd with the current day date):
+python manage.py dumpdata > test_data/yyyymmdd_dataExport.json
 
 At any point if you want to restore the database to that point simply run:
-python manage.py loaddata test_data/test_file_1.json
+python manage.py loaddata test_data/yyyymmdd_dataExport.json
