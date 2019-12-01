@@ -1,12 +1,24 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% static "" as baseUrl %}
+
+
 
 {% block content %}
 <!-- Custom fonts for this template-->
 <link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
 <h3>Titre : {{title}}</h3>
-<img src="{% static 'imgActivity\{{img}}' %}" alt="">
+<img src="{{ baseUrl }}/{{img}}"></img>
+<figure>
+    <figcaption>Listen to the T-Rex:</figcaption>
+    <audio
+        controls
+        src="{{ baseUrl }}/{{img}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
 
 
 {% endblock %}

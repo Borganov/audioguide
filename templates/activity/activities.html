@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% static "" as baseUrl %}
+
+
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>Toutes les activités :</h1>
+<table style="width:100%">
+ <tr>
+   <th>Titre</th>
+   <th>Description</th>
+   <th>Image</th>
+   <th>Langue</th>
+ </tr>
+ {% for a in activities %}
+ <tr>
+   <td>{{a.title}}</td>
+   <td>{{a.description}}</td>
+   <td><img src="{{ baseUrl }}/{{a.img}}" style="height: 100px; width: 100px"></img></td>
+   <td>{{a.lang}}</td>
+ </tr>
+{% endfor %}
+
+
+
+</table>
+
+{% endblock %}
