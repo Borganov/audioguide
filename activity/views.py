@@ -21,7 +21,8 @@ class Detail(TemplateView):
         context = super().get_context_data(**kwargs)
 
         #Get indicator data
-        id = '='+kwargs.get('id')
-        context = Activity.objects.get(id='1').__dict__
+        lg = kwargs.get('lg')
+        context = Activity.objects.get(lang=lg).__dict__
+        print(context)
 
         return context
