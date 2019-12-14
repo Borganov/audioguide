@@ -21,8 +21,8 @@ class Detail(TemplateView):
         context = super().get_context_data(**kwargs)
 
         #Get indicator data
-        lg = kwargs.get('lg')
-        context = Activity.objects.get(lang=lg).__dict__
+        id = kwargs.get('id')
+        context = Activity.objects.get(id=id).__dict__
         print(context)
 
         return context
@@ -39,7 +39,7 @@ class All(TemplateView):
         #Get indicator data
         lg = kwargs.get('lg')
         context = Activity.objects.filter(lang__startswith=lg)
-        
+
         print(context)
 
         print({'activities' : context})

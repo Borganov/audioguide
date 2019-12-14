@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% static "" as baseUrl %}
+
+
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>Tous les postes :</h1>
+<table style="width:100%">
+ <tr>
+   <th>Titre</th>
+   <th>Description</th>
+   <th>Langue</th>
+ </tr>
+ {% for a in positions %}
+ <tr>
+   <td>{{a.titre}}</td>
+   <td>{{a.description}}</td>
+   <td>{{a.lang}}</td>
+ </tr>
+{% endfor %}
+
+
+
+</table>
+
+{% endblock %}

@@ -14,4 +14,5 @@ class PositionItem(models.Model):
     titre = models.CharField(max_length=100)
     description = models.CharField(max_length=1000)
     lang = models.CharField(max_length=2)
+    audio = models.FileField(upload_to='static/audio/',default='static/audio/test4.mp3')
     position = models.ForeignKey(Position, on_delete=models.CASCADE)
