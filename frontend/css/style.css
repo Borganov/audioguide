@@ -1,0 +1,12 @@
+/* Principal color: red (HEX #e73339) */
+.main-color {
+    background-color: #e73339;
+}
+
+.darker-color {
+    color: #9d282a;
+}
+
+.navbar-hamburger {
+cursor: pointer;
+}
