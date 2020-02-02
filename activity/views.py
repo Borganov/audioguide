@@ -37,8 +37,8 @@ class All(TemplateView):
         context = super().get_context_data(**kwargs)
 
         #Get indicator data
-        lg = kwargs.get('lg')
-        context = Activity.objects.filter(lang__startswith=lg)
+        lang = kwargs.get('lang')
+        context = Activity.objects.filter(lang__startswith=lang)
 
         print(context)
 

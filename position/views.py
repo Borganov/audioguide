@@ -31,8 +31,8 @@ class All(TemplateView):
         context = super().get_context_data(**kwargs)
 
         #Get indicator data
-        lg = kwargs.get('lg')
-        context = PositionItem.objects.filter(lang__startswith=lg)
+        lang = kwargs.get('lang')
+        context = PositionItem.objects.filter(lang__startswith=lang)
 
 
         return {'positions' : context}

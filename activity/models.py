@@ -7,8 +7,8 @@ def image_upload_path(instance, filename):
 # Create your models here.
 class Activity(models.Model):
     title = models.CharField(max_length=200)
-    description = models.CharField(max_length=1000)
+    description = models.TextField(max_length=1000)
     img = models.ImageField(upload_to='static/imgActivity')
     state = models.BooleanField()
     date = models.DateTimeField('date published')
-    lang = models.CharField(max_length=2)
+    lang = models.CharField(max_length=2, verbose_name="Langue")
