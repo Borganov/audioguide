@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
 .top-buffer {
@@ -31,7 +31,7 @@
     border-style: solid;
     border-radius: 8px;
 }
-	
+
 .jt-contact {
   background-image: url("images/amis.jpg");
   background-size: cover;
@@ -54,6 +54,13 @@
       </div>
       </p>
     </div>
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
     <div class="col-md-2"> </div>
   </div>
   <div class="row top-buffer">
