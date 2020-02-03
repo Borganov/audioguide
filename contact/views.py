@@ -9,11 +9,12 @@ def contact_us(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             # send email code goes here
+            subject_name = form.cleaned_data['subject']
             sender_name = form.cleaned_data['name']
             sender_email = form.cleaned_data['email']
-            message = "{0} has sent you a new message:\n\n{1}".format(sender_name, form.cleaned_data['message'])
-            send_mail('New Enquiry', message, sender_email, ['enquiry@exampleco.com'])
-            return HttpResponse('Thanks for contacting us!')
+            message = "{0} has sent you a new message:\n\n{1}".format(sender_name, sender_email, form.cleaned_data['message'])
+            send_mail(subject_name, message, sender_email, ['nadine.waelti1990@gmail.com'])
+            return HttpResponse('Merci d''avoir pris contact avec nous!')
     else:
         form = ContactForm()
     return render(request, 'contact/contact.html', {'form': form})
