@@ -40,6 +40,10 @@
   background-image: url("images/amis.jpg");
   background-size: cover;
 }
+table{
+border-collapse: separate;
+border-spacing: 15px 15px;
+}
 </style>
 </head>
 <body style="background: #C7342D">
@@ -51,15 +55,21 @@
       <div class="jumbotron jt-contact">
         <h1>Contact</h1>
         <p>Vous avez une question à nous poser? Contactez nous!</p>
+
+      <form action="" method="post">
+        <table>
+    {% csrf_token %}
+    {{ form.as_table }}
+      </table>
+        <p></p>
+    <input type="submit" value="Envoyer mon message à l'association :-)">
+</form>
+
       </div>
       </p>
     </div>
 
-  <form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+
 
     <div class="col-md-2"> </div>
   </div>
