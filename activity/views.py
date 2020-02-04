@@ -1,5 +1,6 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
-def index(request):
-    return HttpResponse("Activity index")
+def activity(request):
+    return render(request, 'activity/activity.html')
