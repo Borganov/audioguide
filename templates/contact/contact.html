@@ -1,16 +1,15 @@
 {% extends "base.html" %}
+
 {% load static %}
 
-{% static "" as baseUrl %}
-
-
-
+{#{% static "" as baseUrl %}#}
+{% load i18n %}
 {% block content %}
 
 <div class="container-fluid">
   <div class="row top-buffer">
-    <div class="col-md-2"> </div>
-    <div class="col-md-8">
+
+    <div class="col-md-12">
       <p align="center">
       <div class="jumbotron jt-contact">
         <h1>Contact</h1>
@@ -22,34 +21,19 @@
     {{ form.as_table }}
       </table>
         <p></p>
-    <input type="submit" value="Envoyer mon message à l'association :-)">
+
+    <input class="send" type="submit" value="ENVOYER LE MAIL A L'ASSOCIATION"><p></p>
 </form>
-
-      </div>
-      </p>
-    </div>
-
-
-    <div class="col-md-2"> </div>
-  </div>
-  <div class="row top-buffer">
-    <div class="col-md-2"> </div>
-    <div class="col-md-8">
-        <div class="panel panel-default">
-          <div id="collapse2" class="panel-title">
-            <div class="panel-body">Adresse administrative de l’association :<br>
+ <div class="panel-body">Adresse administrative de l’association :<br>
               Association des amis du<br>
               pont suspendu de Niouc<br>
               Rue des Longs-Prés 40<br>
               CH-3960 Sierre<br>
               +41(0)78/622.41.93</div>
-          </div>
-        </div>
       </div>
+      </p>
     </div>
-
-
   </div>
-
+</div>
 
 {% endblock %}
