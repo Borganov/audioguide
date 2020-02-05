@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% static "" as baseUrl %}
+
+
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>Choix des langues</h1><br>
+<table style="width:30%">
+ <tr>
+   <th>
+       <label class="switch">
+  <input type="radio" name="lang" checked>
+  <span class="slider round"></span>
+    </label>
+   </th>
+   <th><h2>Français</h2></th>
+ </tr>
+ <tr>
+   <td><label class="switch">
+  <input type="radio" name="lang">
+  <span class="slider round"></span>
+</label></td>
+     <td><h2>English</h2></td>
+ </tr>
+ <tr>
+   <td><label class="switch">
+  <input type="radio" name="lang">
+  <span class="slider round"></span>
+</label></td>
+     <td><h2>Deutsch</h2></td>
+ </tr>
+</table>
+
+
+{% endblock %}

@@ -19,9 +19,12 @@ from contact import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<lang>/activity/', include('activity.urls')),
-    path('<lang>/position/', include('position.urls')),
+    path('activity/', include('templates.urls')),
+    path('position/', include('templates.urls')),
     path('contact/', views.contact_us),
     path('help/', views.contact_us),
+    path('accueil/', include('templates.urls')),
+    path('about/', include('templates.urls')),
+    path('language/', include('templates.urls')),
     path('', include('templates.urls')),
 ]
