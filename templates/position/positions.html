@@ -7,12 +7,12 @@
 {% load i18n %}
 {% block content %}
 <!-- Custom fonts for this template-->
-<h1>Tous les postes :</h1>
+<h1>{% trans "Tous les postes :" %}</h1>
 <table style="width:100%">
  <tr>
-   <th>Titre</th>
-   <th>Description</th>
-   <th>Langue</th>
+   <th>{% trans "Titre" %}</th>
+   <th>{% trans "Description" %}</th>
+   <th>{% trans "Langue" %}</th>
  </tr>
  {% for a in positions %}
  <tr>

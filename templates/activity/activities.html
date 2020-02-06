@@ -7,13 +7,13 @@
 
 {% block content %}
 <!-- Custom fonts for this template-->
-<h1>Toutes les activités :</h1>
+<h1>{% trans "Toutes les activités :" %}</h1>
 <table style="width:100%">
  <tr>
-   <th>Titre</th>
-   <th>Description</th>
-   <th>Image</th>
-   <th>Langue</th>
+   <th>{% trans "Titre" %}</th>
+   <th>{% trans "Description" %}</th>
+   <th>{% trans "Image" %}</th>
+   <th>{% trans "Langue" %}</th>
  </tr>
  {% for a in activities %}
  <tr>

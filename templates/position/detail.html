@@ -8,8 +8,8 @@
 {% block content %}
 <!-- Custom fonts for this template-->
 <link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
-<h3>Titre : {{title}}</h3>
-<h4>Description : {{description}}</h4>
+<h3>{% trans "Titre :" %} {{title}}</h3>
+<h4>{% trans "Description :" %} {{description}}</h4>
 <img src="{{ baseUrl }}/{{img}}"></img>
 <figure>
     <figcaption>Listen to the T-Rex:</figcaption>

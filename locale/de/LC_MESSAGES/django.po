@@ -30,9 +30,71 @@ msgstr ""
 msgid "Deutsch"
 msgstr ""
 
+#: .\base.html:7
+msgid "Les amis du pont"
+msgstr "Freunde des Pont"
+msgid "Activités"
+msgstr "Tätigkeiten"
+msgid "Guide audio"
+msgstr "Audioführer"
+msgid "Contact"
+msgstr "Kontakt"
+msgid "Accès"
+msgstr "Zugang"
+
+#: .\templates\activity\activities.html:7
+msgid "Toutes les activités :"
+msgstr "Alle Tätigkeiten"
+msgid "Titre"
+msgstr "Titel"
+msgid "Description"
+msgstr "Beschreibung"
+msgid "Langue"
+msgstr "Sprache"
+
+#: .\templates\about\about.html:7
+msgid "A propos de l'application"
+msgstr "Über die Anwendung von"
+
+#: .\templates\activity\detail.html:7
+
+#: .\templates\contact\contact.html:7
+msgid "Vous avez une question à nous poser? Contactez nous!"
+msgstr "Haben Sie eine Frage? Kontaktieren Sie uns!"
+msgid "Sujet:"
+msgstr "Thema:"
+msgid "Message"
+msgstr "Nachricht"
+msgid "ENVOYER"
+msgstr "SENDEN"
+msgid "Adresse administrative de l’association :"
+msgstr "Verwaltungsanschrift der Vereinigung :"
+
+#: .\templates\language\language.html:7
+msgid "Choix de la langue"
+msgstr "Wahl der Sprache"
+msgid "Langue actuelle :"
+msgstr "Aktuelle Sprache :"
+msgid "Changer de langue"
+msgstr "Sprache wechseln"
+msgid "Enregistrer mon choix"
+msgstr "Wahl aufnehmen"
+
+#: .\templates\location\location.html:7
+msgid "Trajet et parking"
+msgstr "Fahrt und Parkplatz"
+
 #: .\templates\pages\home_page.html:7
 msgid "Bienvenue sur le site des amis du Pont de Niouc"
 msgstr "Willkommen auf der Niouc-Brücke"
+
+#: .\templates\position\detail.html:7
+
+#: .\templates\position\detail.html:7
+
+#: .\templates\position\positions.html:7
+msgid "Tous les postes :"
+msgstr "Alle Zinspunkte"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -421,7 +483,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:360
 msgid "Image"
-msgstr ""
+msgstr "Bild"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:778
 #, python-format

@@ -10,8 +10,8 @@
   <div class="row top-buffer">
 
     <div class="col-md-12">
-        <h1>Contact</h1>
-        <p>Vous avez une question à nous poser? Contactez nous!</p>
+        <h1>{% trans "Contact" %}</h1>
+        <p>{% trans "Vous avez une question à nous poser? Contactez nous!"%}</p>
       <form action="" method="post">
         <table>
     {% csrf_token %}
@@ -19,9 +19,9 @@
       </table>
         <p></p>
 
-    <input class="btn btn-primary" type="submit" value="ENVOYER LE MAIL A L'ASSOCIATION"><p></p>
+    <input class="btn btn-primary" type="submit" value='{% trans "ENVOYER" %}'><p></p>
 </form>
- <div class="panel-body">Adresse administrative de l’association :<br>
+ <div class="panel-body">{% trans "Adresse administrative de l’association :" %}<br>
               Association des amis du<br>
               pont suspendu de Niouc<br>
               Rue des Longs-Prés 40<br>
