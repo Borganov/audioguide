@@ -1,3 +1,4 @@
+from django.utils.translation import ugettext_lazy as _
 """
 Django settings for audioguide project.
 
@@ -16,7 +17,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 STATIC_DIR = os.path.join(BASE_DIR,"static")
-
+REPOSITORY_ROOT = os.path.dirname(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -107,8 +109,15 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
+# Provide a lists of languages which your site supports.
+LANGUAGES = [
+    ('fr', _('Français')),
+    ('en', _('English')),
+    ('de', _('Deutsch')),
+]
 
-LANGUAGE_CODE = 'en-us'
+# Set the default language for your site.
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
@@ -117,6 +126,11 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Tell Django where the project's translation files should be.
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),)
+
 
 
 # Static files (CSS, JavaScript, Images)
@@ -128,4 +142,7 @@ EMAIL_HOST_PASSWORD= 'waelnadi1'
 EMAIL_USE_TLS= True
 EMAIL_PORT= 587
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(REPOSITORY_ROOT, 'static/')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(REPOSITORY_ROOT, 'media/')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]

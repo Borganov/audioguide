@@ -4,9 +4,9 @@
 {#{% static "" as baseUrl %}#}
 {% load i18n %}
 {% block content %}
-<!-- Custom fonts for this template-->
-<h1>Bienvenue sur le site des amis du Pont de Niouc</h1>
-<div class="banner">
-  <img src="{% static 'imgPosition/Niouc-Pont-Suspendu.jpg' %}"/>
-</div>
+<h1>{% trans "Bienvenue sur le site des amis du Pont de Niouc" %}</h1>
+    <div class="banner">
+    <img src="{% static 'imgPosition/Niouc-Pont-Suspendu.jpg' %}"/>
+    </div>
+
 {% endblock %}
