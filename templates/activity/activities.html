@@ -1,31 +1,25 @@
-{% extends "base.html" %}
-{% load staticfiles %}
+    {% extends "base.html" %}
+    {% load staticfiles %}
 
-{% static "" as baseUrl %}
-
-
-
-{% block content %}
-<!-- Custom fonts for this template-->
-<h1>Toutes les activités :</h1>
-<table style="width:100%">
- <tr>
-   <th>Titre</th>
-   <th>Description</th>
-   <th>Image</th>
-   <th>Langue</th>
- </tr>
- {% for a in activities %}
- <tr>
-   <td>{{a.title}}</td>
-   <td>{{a.description}}</td>
-   <td><img src="{{ baseUrl }}/{{a.img}}" style="height: 100px; width: 100px"></img></td>
-   <td>{{a.lang}}</td>
- </tr>
-{% endfor %}
+    {% static "" as baseUrl %}
 
 
 
-</table>
+    {% block content %}
+    <!-- Custom fonts for this template-->
+    <div>
+      <table style="width:100%">
+       <tr>
+         <h1>Activités</h1>
+       </tr>
+       {% for a in activities %}
 
-{% endblock %}
+        <tr>
+          <td><img src="{{ baseUrl }}/{{a.img}}" width="100" height="100"></td>
+          <td><h2>{{a.title}}</h2> <p>{{a.description}}</p></td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    {% endblock %}
