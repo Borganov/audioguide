@@ -61,6 +61,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 textarea{
 wrap:off;
