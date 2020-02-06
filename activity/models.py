@@ -1,5 +1,8 @@
 from django.db import models
 
+from audioguide import settings
+
+
 def image_upload_path(instance, filename):
     return settings.MEDIA_ROOT + '/static/imgActivity'.format(instance.client_order.invoice, filename)
 
