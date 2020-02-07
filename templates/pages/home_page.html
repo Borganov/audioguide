@@ -6,9 +6,50 @@
 {% block content %}
 
 
-<h1>{% trans "Bienvenue sur le site des amis du Pont de Niouc" %}</h1>
     <div class="banner">
-    <img src="{% static 'imgPosition/Niouc-Pont-Suspendu.jpg' %}" class="responsive"/>
-    </div>
+    <img src="{% static 'imgPosition/Niouc-Pont-Suspendu.jpg' %}" class="responsive" />
+
+
+    </div><br>
+
+
+<table style="width:100%;">
+
+ <tr>
+        <td>
+         <h1><a href="/language"> <img src="{% static 'imgLogo/roue.png' %}" style="width:8%"/>   {% trans "Langue" %}</a> </h1></td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1><a href="/position"><img src="{% static 'imgLogo/direction.png' %}" style="width:8%"/>   {% trans "Guide audio" %}</a></h1>
+        </td>
+    </tr>
+      <tr>
+        <td>
+          <h1> <a href="/activity"><img src="{% static 'imgLogo/content.png' %}" style="width:8%"/>   {% trans "Activités" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td>
+           <h1> <a href="/contact"><img src="{% static 'imgLogo/message.png' %}" style="width:8%"/>   {% trans "Contact" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td>
+          <h1> <a href="/location"><img src="{% static 'imgLogo/map.png' %}" style="width:8%"/>   {% trans "Accès" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td>
+            <h1> <a href="/about"><img src="{% static 'imgLogo/information.png' %}" style="width:8%"/>   A propos</a></h1>
+        </td>
+    </tr>
+
+
+</table>
+
 
 {% endblock %}

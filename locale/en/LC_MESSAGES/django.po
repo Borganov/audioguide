@@ -31,8 +31,8 @@ msgid "Deutsch"
 msgstr ""
 
 #: .\base.html:7
-msgid "Les amis du pont"
-msgstr "Friends of the bridge"
+msgid "Les amis du pont de Niouc"
+msgstr "Friends of the Niouc bridge"
 msgid "Activités"
 msgstr "Activity"
 msgid "Guide audio"

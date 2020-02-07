@@ -69,8 +69,8 @@ msgid "Titre :"
 msgstr "Titel"
 
 #: .\templates\base.html:21
-msgid "Les amis du pont"
-msgstr "Freunde des Pont"
+msgid "Les amis du pont de Niouc"
+msgstr "Freunde der Niouc-Brücke"
 
 #: .\templates\base.html:28
 msgid "Activités"

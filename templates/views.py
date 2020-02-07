@@ -41,6 +41,8 @@ def contact(request):
 def detail(request):
     return render(request, 'position/detail.html')
 
+def don(request):
+    return render(request, 'don/don.html')
 
 def home(request):
     return render(request, 'pages/home_page.html')

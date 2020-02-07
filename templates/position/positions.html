@@ -11,7 +11,7 @@
 <form action="/detail" method="post">
     {% for position in positions %}
     {% csrf_token %}
-    <button style="background-color:transparent; border-radius:10px; border-color:red; text-align:left; width:100%;">
+    <button style="background-color:transparent; border-radius:10px; border-color:lightgrey; text-align:left; width:100%;">
         <input type="hidden" value="{{position.id}}" readonly>
         <div class="container-fluid">
             <div class="row top-buffer">
