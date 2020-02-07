@@ -7,23 +7,33 @@
 {% load i18n %}
 {% block content %}
 <!-- Custom fonts for this template-->
-<h1>{% trans "Tous les postes :" %}</h1>
-<table style="width:100%">
- <tr>
-   <th>{% trans "Titre" %}</th>
-   <th>{% trans "Description" %}</th>
-   <th>{% trans "Langue" %}</th>
- </tr>
- {% for a in positions %}
- <tr>
-   <td>{{a.titre}}</td>
-   <td>{{a.description}}</td>
-   <td>{{a.lang}}</td>
- </tr>
-{% endfor %}
+<h1>{% trans "Tous les postes :" %}</h1><br>
+<form action="/detail" method="post">
+    {% for position in positions %}
+    {% csrf_token %}
+    <button style="background-color:transparent; border-radius:10px; border-color:red; text-align:left; width:100%;">
+        <input type="hidden" value="{{position.id}}" readonly>
+        <div class="container-fluid">
+            <div class="row top-buffer">
+                <div class="col-md-2">
+                    <h2>{{position.order}}</h2>
+                </div>
+                <div class="col-md-10">
+                    <h2>{{position.name}}</h2><br>
+                </div>
+            </div>
+            <div class="row top-buffer">
+            <div class="col-md-12">
+                <img src="{{position.img}}" class="responsive">
+            </div>
+            </div>
+        </div>
+    </button>
+    <br>    <br>
+    {% endfor %}
+    </table>
+</form>
 
-
-
-</table>
 
 {% endblock %}
+

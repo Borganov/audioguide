@@ -1,14 +1,25 @@
 from django.core.mail import send_mail
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from activity.models import Activity
 from contact.forms import ContactForm
+from position.models import Position
+from position.models import PositionItem
+
+def about(request):
+    return render(request, 'about/about.html')
 
 
-def home(request):
-    from django.utils import translation
-
+def accueil(request):
     return render(request, 'pages/home_page.html')
+
+
+def activity(request):
+    activities = Activity.objects.all()
+    context = {
+        'activities': activities,
+    }
+    return render(request, 'activity/activities.html', context)
 
 
 def contact(request):
@@ -27,8 +38,16 @@ def contact(request):
     return render(request, 'contact/contact.html', {'form': form})
 
 
-def accueil(request):
+def detail(request):
+    return render(request, 'position/detail.html')
+
+
+def home(request):
     return render(request, 'pages/home_page.html')
+
+
+def language(request):
+    return render(request, 'language/language.html')
 
 
 def location(request):
@@ -36,16 +55,10 @@ def location(request):
 
 
 def positions(request):
-    return render(request, 'position/positions.html')
+    positions = Position.objects.all()
+    context = {
+        'positions': positions,
+    }
 
+    return render(request, 'position/positions.html', context)
 
-def activity(request):
-    return render(request, 'activity/activities.html')
-
-
-def about(request):
-    return render(request, 'about/about.html')
-
-
-def language(request):
-    return render(request, 'language/language.html')

@@ -15,4 +15,11 @@ class Activity(models.Model):
     description = models.TextField(max_length=1000)
     img = models.ImageField(upload_to='static/imgActivity')
     state = models.BooleanField()
-    date = models.DateTimeField('date published')
+    date = models.DateTimeField(auto_now_add=True, blank=True)
+    objects = models.Manager()
+
+    def __str__(self):
+        return '{title} - {description} - {img}'.format(title=self.title, description = self.description, img = self.img)
+
+    def __unicode__(self):
+        return self.name

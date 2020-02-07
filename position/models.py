@@ -13,9 +13,10 @@ class Position(models.Model):
     order = models.IntegerField()
     name = models.CharField(max_length=100)
     img = models.ImageField(upload_to='static/imgPosition')
+    objects = models.Manager()
 
     def __str__(self):
-        return '{} - {}'.format(self.order, self.name)
+        return '{order} - {name}'.format(order = self.order, name = self.name)
 
     def __unicode__(self):
         return self.name
@@ -26,10 +27,10 @@ class PositionItem(models.Model):
     lang = models.CharField(max_length=2, verbose_name="Langue")
     audio = models.FileField(upload_to='static/audio/', default='static/audio/test4.mp3')
     position = models.ForeignKey('Position', on_delete=models.CASCADE)
+    objects = models.Manager()
 
     def __str__(self):
-        return '{} - {} - {}'.format(self.position, self.titre, self.description)
-
+        return '{position} - {titre} - {description}'.format(position = self.position, titre = self.titre, description = self.description)
 
     def __unicode__(self):
         return self.position.name

@@ -7,25 +7,29 @@
 
 {% block content %}
 <!-- Custom fonts for this template-->
-<h1>{% trans "Toutes les activités :" %}</h1>
-<table style="width:100%">
- <tr>
-   <th>{% trans "Titre" %}</th>
-   <th>{% trans "Description" %}</th>
-   <th>{% trans "Image" %}</th>
-   <th>{% trans "Langue" %}</th>
- </tr>
- {% for a in activities %}
- <tr>
-   <td>{{a.title}}</td>
-   <td>{{a.description}}</td>
-   <td><img src="{{ baseUrl }}/{{a.img}}" style="height: 100px; width: 100px"></img></td>
-   <td>{{a.lang}}</td>
- </tr>
-{% endfor %}
-
-
-
-</table>
-
-{% endblock %}
+<h1>{% trans "Toutes les activités :" %}</h1><br>
+<form action="" method="post">
+    {% for activity in activities %}
+    {% csrf_token %}
+    <button style="background-color:transparent; border-color:green;">
+        <div class="container-fluid">
+            <div class="row top-buffer">
+                <div class="col-md-12">
+                    <h1><input type="hidden" value="{{activity.id}}" readonly> {{activity.title}}</h1>
+                </div>
+            </div>
+            <div class="row top-buffer" style="text-align:justify">
+                <div class="col-md-12">
+                    <h3>{{activity.description}}</h3>
+                </div>
+            </div>
+            <div class="row top-buffer">
+                <div class="col-md-12">
+                    <img src="{{ baseUrl }}/{{activity.img}}" class="responsive">
+                </div>
+            </div>
+        </div>
+    </button>
+    <br> <br>
+    {% endfor %}
+    {% endblock %}
