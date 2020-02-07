@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-06 20:19+0100\n"
+"POT-Creation-Date: 2020-02-07 22:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\audioguide\settings.py:114
+#: .\audioguide\settings.py:115
 msgid "Français"
 msgstr ""
 
-#: .\audioguide\settings.py:115
+#: .\audioguide\settings.py:116
 msgid "English"
 msgstr ""
 
-#: .\audioguide\settings.py:116
+#: .\audioguide\settings.py:117
 msgid "Deutsch"
 msgstr ""
 
@@ -38,29 +38,18 @@ msgstr ""
 msgid "A propos de l'application"
 msgstr "Über die Anwendung von"
 
-#: .\templates\activity\activities.html:10
-msgid "Toutes les activités :"
-msgstr "Alle Tätigkeiten"
+#: .\templates\about\about.html:11
+msgid "Auteurs"
+msgstr "Autoren"
 
-#: .\templates\activity\activities.html:13
-#: .\templates\position\positions.html:13
-msgid "Titre"
-msgstr "Titel"
+#: .\templates\about\about.html:12
+msgid "Version"
+msgstr "Ausgabe"
 
-#: .\templates\activity\activities.html:14
-#: .\templates\position\positions.html:14
-msgid "Description"
-msgstr "Beschreibung"
-
-#: .\templates\activity\activities.html:15
-#: .\venv\Lib\site-packages\django\db\models\fields\files.py:360
-msgid "Image"
-msgstr "Bild"
-
-#: .\templates\activity\activities.html:16 .\templates\base.html:40
-#: .\templates\position\positions.html:15
-msgid "Langue"
-msgstr "Sprache"
+#: .\templates\activity\activities.html:10 .\templates\base.html:30
+#: .\templates\pages\home_page.html:32
+msgid "Activités"
+msgstr "Tätigkeiten"
 
 #: .\templates\activity\detail.html:11 .\templates\position\detail.html:11
 #, fuzzy
@@ -68,25 +57,26 @@ msgstr "Sprache"
 msgid "Titre :"
 msgstr "Titel"
 
-#: .\templates\base.html:21
-msgid "Les amis du pont de Niouc"
-msgstr "Freunde der Niouc-Brücke"
-
-#: .\templates\base.html:28
-msgid "Activités"
-msgstr "Tätigkeiten"
-
-#: .\templates\base.html:31
+#: .\templates\base.html:33 .\templates\pages\home_page.html:27
 msgid "Guide audio"
 msgstr "Audioführer"
 
-#: .\templates\base.html:34 .\templates\contact\contact.html:13
+#: .\templates\base.html:36 .\templates\contact\contact.html:13
+#: .\templates\pages\home_page.html:37
 msgid "Contact"
 msgstr "Kontakt"
 
-#: .\templates\base.html:37
+#: .\templates\base.html:39 .\templates\pages\home_page.html:42
 msgid "Accès"
 msgstr "Zugang"
+
+#: .\templates\base.html:42 .\templates\pages\home_page.html:20
+msgid "Langue"
+msgstr "Sprache"
+
+#: .\templates\base.html:45 .\templates\pages\home_page.html:47
+msgid "A propos"
+msgstr "Über"
 
 #: .\templates\contact\contact.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
@@ -99,6 +89,20 @@ msgstr "SENDEN"
 #: .\templates\contact\contact.html:24
 msgid "Adresse administrative de l’association :"
 msgstr "Verwaltungsanschrift der Vereinigung :"
+
+#: .\templates\don\don.html:10
+msgid "Faire un don"
+msgstr "Eine spende machen"
+
+#: .\templates\don\don.html:13
+msgid ""
+"A l’aide du bulletin de versement ci-dessous vous pouvez faire un don, pour "
+"soutenir notre association et développer de nouvelles activités en relation "
+"avec notre pont suspendu :"
+msgstr ""
+"Mit dem unten stehenden Einzahlungsschein können Sie eine Spende zur "
+"Unterstützung unseres Vereins und zur Entwicklung neuer Aktivitäten im "
+"Zusammenhang mit unserer Hängebrücke leisten:"
 
 #: .\templates\language\language.html:14
 msgid "Choix de la langue"
@@ -117,12 +121,63 @@ msgid "Enregistrer mon choix"
 msgstr "Wahl aufnehmen"
 
 #: .\templates\location\location.html:10
-msgid "Trajet et parking"
-msgstr "Fahrt und Parkplatz"
+msgid "Localisation et horaires"
+msgstr "Standort und Öffnungszeiten"
 
-#: .\templates\pages\home_page.html:7
-msgid "Bienvenue sur le site des amis du Pont de Niouc"
-msgstr "Willkommen auf der Niouc-Brücke"
+#: .\templates\location\location.html:11
+msgid ""
+"Le pont suspendu de Niouc, se trouve non loin de Sierre, en Valais (Suisse). "
+"Pour vous y rendre en voiture, prenez la sortie Sierre-Est, puis au rond "
+"point, prenez la direction du Val d’Anniviers. Après le village de Niouc, "
+"soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
+"par une petite route forestière."
+msgstr ""
+"Die Niouc-Hängebrücke liegt unweit von Sierre im Wallis (Schweiz). Um mit "
+"dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, dann "
+"nehmen Sie den Kreisverkehr und fahren Sie zum Val d'Anniviers. Nach dem "
+"Dorf Niouc, achten Sie auf die Beschilderung, der Zugang zur Brücke liegt "
+"auf einer Kurve, über eine kleine Forststraße."
+
+#: .\templates\location\location.html:16
+msgid ""
+"L’accès au site est gratuit. La traversée du pont coûte 5frs. L’intégralité "
+"des bénéfices est affecté à l’entretien du pont et aux projets en cours."
+msgstr ""
+"Der Zugriff auf die Website ist kostenlos. Überqueren der Brücke kostet "
+"5frs. Alle Gewinne fließen in die Wartung der Brücke und in laufende "
+"Projekte."
+
+#: .\templates\location\location.html:17
+msgid "Le pont est ouvert au public :"
+msgstr "Die Brücke steht der Öffentlichkeit offen:"
+
+#: .\templates\location\location.html:18
+msgid "De début avril à fin octobre,"
+msgstr "Von Anfang April bis Ende Oktober"
+
+#: .\templates\location\location.html:19
+msgid "uniquement les weekend,"
+msgstr "nur an den Wochenenden"
+
+#: .\templates\location\location.html:20 .\templates\location\location.html:25
+msgid "de 11h à 18h"
+msgstr "von 11 bis 18 Uhr"
+
+#: .\templates\location\location.html:23
+msgid "Du 18 juillet au 18 août,"
+msgstr ""
+
+#: .\templates\location\location.html:24
+msgid "tous les jours sauf le lundi,"
+msgstr "jeden Tag außer montags,"
+
+#: .\templates\location\location.html:28
+msgid "Coordonnées du pont - Google Map :"
+msgstr "Brückenkoordinaten - Google Map:"
+
+#: .\templates\location\location.html:29
+msgid "Coordonnées GPS :"
+msgstr "GPS-Koordinaten:"
 
 #: .\templates\position\detail.html:12
 #, fuzzy
@@ -131,8 +186,8 @@ msgid "Description :"
 msgstr "Beschreibung"
 
 #: .\templates\position\positions.html:10
-msgid "Tous les postes :"
-msgstr "Alle Zinspunkte"
+msgid "Points d'intérêts"
+msgstr "Zinspunkt"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -518,6 +573,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:221
 msgid "File"
 msgstr ""
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:360
+msgid "Image"
+msgstr "Bild"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:778
 #, python-format
@@ -1304,6 +1363,20 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "L’accès au site est gratuit, la traversée du pont coûte 5frs, "
+#~| "l’intégralité des bénéfices est affecté à l’entretien du pont et/ou "
+#~| "projets en cours. "
+#~ msgid ""
+#~ "L’accès au site est gratuit, la traversée du pont coûte 5frs, "
+#~ "l’intégralité des bénéfices est affecté à l’entretien du pont et/ou "
+#~ "projets en cours."
+#~ msgstr ""
+#~ "Der Zugang zum Gelände ist kostenlos, die Überquerung der Brücke kostet 5 "
+#~ "Sekunden, der gesamte Gewinn wird für die Instandhaltung der Brücke und/"
+#~ "oder für laufende Projekte verwendet."
 
 #~ msgid "Sujet:"
 #~ msgstr "Thema:"

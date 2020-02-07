@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-06 15:26+0100\n"
+"POT-Creation-Date: 2020-02-07 22:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,83 +18,174 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\audioguide\settings.py:114
+#: .\audioguide\settings.py:115
 msgid "Français"
 msgstr ""
 
-#: .\audioguide\settings.py:115
+#: .\audioguide\settings.py:116
 msgid "English"
 msgstr ""
 
-#: .\audioguide\settings.py:116
+#: .\audioguide\settings.py:117
 msgid "Deutsch"
 msgstr ""
 
-#: .\base.html:7
-msgid "Les amis du pont de Niouc"
-msgstr "Friends of the Niouc bridge"
-msgid "Activités"
-msgstr "Activity"
-msgid "Guide audio"
-msgstr "Audioguide"
-msgid "Contact"
-msgstr "Contact"
-msgid "Accès"
-msgstr "Access"
+#: .\audioguide\urls.py:26
+msgid "admin/"
+msgstr ""
 
-#: .\templates\activity\activities.html:7
-msgid "Toutes les activités :"
-msgstr "All activities"
-msgid "Titre"
-msgstr "Titel"
-msgid "Description"
-msgstr "Description"
-msgid "Langue"
-msgstr "Language"
-
-#: .\templates\about\about.html:7
+#: .\templates\about\about.html:10
 msgid "A propos de l'application"
 msgstr "About this application"
 
-#: .\templates\activity\detail.html:7
+#: .\templates\about\about.html:11
+msgid "Auteurs"
+msgstr "Authors"
 
-#: .\templates\contact\contact.html:7
+#: .\templates\about\about.html:12
+msgid "Version"
+msgstr ""
+
+#: .\templates\activity\activities.html:10 .\templates\base.html:30
+#: .\templates\pages\home_page.html:32
+msgid "Activités"
+msgstr "Activities"
+
+#: .\templates\activity\detail.html:11 .\templates\position\detail.html:11
+#, fuzzy
+#| msgid "Titre"
+msgid "Titre :"
+msgstr "Titel"
+
+#: .\templates\base.html:33 .\templates\pages\home_page.html:27
+msgid "Guide audio"
+msgstr "Audio guide"
+
+#: .\templates\base.html:36 .\templates\contact\contact.html:13
+#: .\templates\pages\home_page.html:37
+msgid "Contact"
+msgstr "Contact"
+
+#: .\templates\base.html:39 .\templates\pages\home_page.html:42
+msgid "Accès"
+msgstr "Access"
+
+#: .\templates\base.html:42 .\templates\pages\home_page.html:20
+msgid "Langue"
+msgstr "Language"
+
+#: .\templates\base.html:45 .\templates\pages\home_page.html:47
+msgid "A propos"
+msgstr "About"
+
+#: .\templates\contact\contact.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
-msgstr "Do you have a question? Contact us!"
-msgid "Sujet:"
-msgstr "Subject:"
-msgid "Message"
-msgstr "Message"
+msgstr "Have a question to ask us? Contact us!"
+
+#: .\templates\contact\contact.html:22
 msgid "ENVOYER"
 msgstr "SEND"
+
+#: .\templates\contact\contact.html:24
 msgid "Adresse administrative de l’association :"
 msgstr "Administrative address of the association :"
 
-#: .\templates\language\language.html:7
+#: .\templates\don\don.html:10
+msgid "Faire un don"
+msgstr "Make a donation"
+
+#: .\templates\don\don.html:13
+msgid ""
+"A l’aide du bulletin de versement ci-dessous vous pouvez faire un don, pour "
+"soutenir notre association et développer de nouvelles activités en relation "
+"avec notre pont suspendu :"
+msgstr ""
+"Using the payment slip below you can make a donation to support our "
+"association and develop new activities related to our suspension bridge:"
+
+#: .\templates\language\language.html:14
 msgid "Choix de la langue"
-msgstr "Language choice"
+msgstr "Choice of the language"
+
+#: .\templates\language\language.html:16
 msgid "Langue actuelle :"
-msgstr "Current language"
+msgstr "Current language :"
+
+#: .\templates\language\language.html:17
 msgid "Changer de langue"
 msgstr "Change language"
+
+#: .\templates\language\language.html:38
 msgid "Enregistrer mon choix"
 msgstr "Save my choice"
 
-#: .\templates\location\location.html:7
-msgid "Trajet et parking"
-msgstr "Travel and car park"
+#: .\templates\location\location.html:10
+msgid "Localisation et horaires"
+msgstr "Location and opening hours"
 
-#: .\templates\pages\home_page.html:7
-msgid "Bienvenue sur le site des amis du Pont de Niouc"
-msgstr "Welcome to the website of the friends of the Pont de Niouc"
+#: .\templates\location\location.html:11
+msgid ""
+"Le pont suspendu de Niouc, se trouve non loin de Sierre, en Valais (Suisse). "
+"Pour vous y rendre en voiture, prenez la sortie Sierre-Est, puis au rond "
+"point, prenez la direction du Val d’Anniviers. Après le village de Niouc, "
+"soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
+"par une petite route forestière."
+msgstr ""
+"The Niouc suspension bridge is located not far from Sierre, in Valais "
+"(Switzerland). To get there by car, take the Sierre-Est exit, then at the "
+"roundabout, take the direction of Val d´Anniviers. After the village of "
+"Niouc, pay attention to the signs, the access to the bridge is located in a "
+"curve, by a small forest road."
 
-#: .\templates\position\detail.html:7
+#: .\templates\location\location.html:16
+msgid ""
+"L’accès au site est gratuit. La traversée du pont coûte 5frs. L’intégralité "
+"des bénéfices est affecté à l’entretien du pont et aux projets en cours."
+msgstr ""
+"Access to the site is free. Crossing the Bridge Costs 5frs. All of the "
+"profits are used for bridge maintenance and ongoing projects."
 
-#: .\templates\position\detail.html:7
+#: .\templates\location\location.html:17
+msgid "Le pont est ouvert au public :"
+msgstr "The bridge is open to the public :"
 
-#: .\templates\position\positions.html:7
-msgid "Tous les postes :"
-msgstr "All points of interest"
+#: .\templates\location\location.html:18
+msgid "De début avril à fin octobre,"
+msgstr "From early April to late October,"
+
+#: .\templates\location\location.html:19
+msgid "uniquement les weekend,"
+msgstr "only weekends,"
+
+#: .\templates\location\location.html:20 .\templates\location\location.html:25
+msgid "de 11h à 18h"
+msgstr "11 a.m. to 6 p.m."
+
+#: .\templates\location\location.html:23
+msgid "Du 18 juillet au 18 août,"
+msgstr "From July 18 to August 18,"
+
+#: .\templates\location\location.html:24
+msgid "tous les jours sauf le lundi,"
+msgstr "every day except Monday,"
+
+#: .\templates\location\location.html:28
+msgid "Coordonnées du pont - Google Map :"
+msgstr "Bridge coordinates - Google Map :"
+
+#: .\templates\location\location.html:29
+msgid "Coordonnées GPS :"
+msgstr "GPS coordinates :"
+
+#: .\templates\position\detail.html:12
+#, fuzzy
+#| msgid "Description"
+msgid "Description :"
+msgstr "Description"
+
+#: .\templates\position\positions.html:10
+msgid "Points d'intérêts"
+msgstr "Points of interest"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
@@ -483,7 +574,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\files.py:360
 msgid "Image"
-msgstr ""
+msgstr "Picture"
 
 #: .\venv\Lib\site-packages\django\db\models\fields\related.py:778
 #, python-format
@@ -1270,3 +1361,9 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid "Sujet:"
+#~ msgstr "Thema:"
+
+#~ msgid "Message"
+#~ msgstr "Nachricht"

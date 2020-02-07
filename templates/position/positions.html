@@ -7,7 +7,7 @@
 {% load i18n %}
 {% block content %}
 <!-- Custom fonts for this template-->
-<h1>{% trans "Tous les postes :" %}</h1><br>
+<h1>{% trans "Points d'intérêts" %}</h1><br>
 <form action="/detail" method="post">
     {% for position in positions %}
     {% csrf_token %}
