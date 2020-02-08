@@ -44,10 +44,6 @@ def detail(request):
 def don(request):
     return render(request, 'don/don.html')
 
-def home(request):
-    return render(request, 'pages/home_page.html')
-
-
 def language(request):
     return render(request, 'language/language.html')
 
@@ -72,3 +68,7 @@ def positionItem(request):
     }
 
     return render(request, 'position/positionItem.html', context)
+
+
+def start(request):
+    return render(request, 'pages/start.html')
