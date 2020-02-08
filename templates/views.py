@@ -64,3 +64,11 @@ def positions(request):
 
     return render(request, 'position/positions.html', context)
 
+
+def positionItem(request):
+    positions = PositionItem.objects.all()
+    context = {
+        'positionItem': positions,
+    }
+
+    return render(request, 'position/positionItem.html', context)

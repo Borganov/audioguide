@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% static "" as baseUrl %}
+
+
+{% load i18n %}
+{% block content %}
+<!-- Custom fonts for this template-->
+<link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
+<h1>Titre {{positionItem.title}}</h1>
+<h2>Description {{positionItem.description}}</h2>
+<img src="{{ baseUrl }}/{{img}}"/>
+<figure>
+    <figcaption>Listen to the T-Rex:</figcaption>
+    <audio
+        controls
+        src="{{ baseUrl }}/{{audio}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+
+<table width="100%">
+    <tr>
+        <td style="text-align:left;">
+            <a href=""> <img src="{% static 'imgLogo/before.png' %}" style="width:50px"/> Point 30</a>
+        </td>
+        <td style="text-align:center;">
+            <a class="nav-link" href="/position">{% trans "Menu" %}</a>
+        </td>
+        <td style="text-align:right;">
+            <a href=""> Point 2 <img src="{% static 'imgLogo/after.png' %}" style="width:50px"/></a>
+        </td>
+    </tr>
+</table>
+
+
+
+{% endblock %}

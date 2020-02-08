@@ -8,7 +8,7 @@
 {% block content %}
 <!-- Custom fonts for this template-->
 <h1>{% trans "Points d'intérêts" %}</h1><br>
-<form action="/detail" method="post">
+<form action="/positionItem" method="post">
     {% for position in positions %}
     {% csrf_token %}
     <button style="background-color:transparent; border-radius:10px; border-color:lightgrey; text-align:left; width:100%;">
@@ -21,11 +21,6 @@
                 <div class="col-md-10">
                     <h2>{{position.name}}</h2><br>
                 </div>
-            </div>
-            <div class="row top-buffer">
-            <div class="col-md-12">
-                <img src="{{position.img}}" class="responsive">
-            </div>
             </div>
         </div>
     </button>

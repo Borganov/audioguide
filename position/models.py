@@ -12,7 +12,6 @@ class Position(models.Model):
     lang = models.CharField(max_length=2, verbose_name="Langue")
     order = models.IntegerField()
     name = models.CharField(max_length=100)
-    img = models.ImageField(upload_to='static/imgPosition')
     objects = models.Manager()
 
     def __str__(self):
@@ -26,6 +25,7 @@ class PositionItem(models.Model):
     description = models.CharField(max_length=1000)
     lang = models.CharField(max_length=2, verbose_name="Langue")
     audio = models.FileField(upload_to='static/audio/', default='static/audio/test4.mp3')
+    img = models.ImageField(upload_to='static/imgPosition')
     position = models.ForeignKey('Position', on_delete=models.CASCADE)
     objects = models.Manager()
 

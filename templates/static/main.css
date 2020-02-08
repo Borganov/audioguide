@@ -105,8 +105,12 @@ position:relative
 
 p{
 text-align:justify;
+font-size:1.17em;
 }
 
+a{
+color:grey;
+}
 
 
 
