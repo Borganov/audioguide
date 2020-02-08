@@ -9,38 +9,41 @@
 {% block content %}
 <!-- Custom fonts for this template-->
 <link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
-<h1>Titre {{positionItem.title}}</h1>
-<h2>Description {{positionItem.description}}</h2>
-<img src="{{ baseUrl }}/{{img}}"/>
+
+    <img src="{% static 'imgPosition/amis_orig.jpg' %}" class="responsive" style="max-width:700px"/>
+<br><br>
+<h1>Titre {{positionItem.title}}</h1><br>
+
+<p>Description {{positionItem.description}}Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><br>
+<br>
+
+    <!--src="{{ baseUrl }}/{{audio}}"-->
 <figure>
-    <figcaption>Listen to the T-Rex:</figcaption>
+    <figcaption></figcaption>
     <audio
-        controls
-        src="{{ baseUrl }}/{{audio}}">
-            Your browser does not support the
-            <code>audio</code> element.
+            controls
+            src="{% static 'audio/test4.mp3' %}">
+        Your browser does not support the
+        <code>audio</code> element.
     </audio>
 </figure>
 
-<div class="parent" style="background-color:#c0342e;">
-                <div class="enfant">
-                    <a class="nav-link" href=""> <img src="{% static 'imgLogo/flecheBack.png' %}" style="width:50px"/><br><br><h2 style="color:white;"> Point 30</h2></a>
-                </div>
-                 <div class="enfant">
-                     <a class="nav-link" href="/position"><img src="{% static 'imgLogo/menu.png' %}" style="width:50px"/><br> <br><h2 style="color:white;">{% trans "Menu" %}</h2></a>
-        </div>
-                 <div class="enfant">
-                     <a class="nav-link" href=""><img src="{% static 'imgLogo/flecheNext.png' %}" style="width:50px"/><br><br><h2 style="color:white;">Point 2 </h2> </a>
-          </div>
+<br>
+
+<div class="parent">
+    <div class="enfant">
+        <a class="nav-link" href=""> <img src="{% static 'imgLogo/flecheBack.png' %}" style="width:50px"/>
+           <br> <h8 style="color:white;"> Point 30</h8></a>
+    </div>
+    <div class="enfant">
+        <a class="nav-link" href="/position"><img src="{% static 'imgLogo/menu.png' %}" style="width:50px"/><br>
+            <h8 style="color:white;">{% trans "Menu" %}</h8></a>
+    </div>
+    <div class="enfant">
+        <a class="nav-link" href=""><img src="{% static 'imgLogo/flecheNext.png' %}" style="width:50px"/><br><h8 style="color:white;">Point 2 </h8>
 
 
-
-        </div>
-
-
-
-
-
-
-
+           </a>
+    </div>
+</div>
 {% endblock %}
