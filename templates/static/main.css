@@ -112,11 +112,27 @@ a{
 color:grey;
 }
 
-td{
+.indent{
 text-indent:33%;
 }
 li{
 color:white;
 }
 
-
+.parent {
+  display:flex;
+  justify-content:space-between;
+    position: fixed;
+    bottom: 150px;
+    left:0;
+    right:0;
+    width:100%;
+}
+.enfants{
+  width:200px;
+  height:200px;
+  background:red;
+}
+img{
+  box-shadow: 1px 1px 12px #555;
+}

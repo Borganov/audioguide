@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-07 22:31+0100\n"
+"POT-Creation-Date: 2020-02-08 14:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "Ausgabe"
 msgid "Activités"
 msgstr "Tätigkeiten"
 
-#: .\templates\activity\detail.html:11 .\templates\position\detail.html:11
+#: .\templates\activity\detail.html:11
 #, fuzzy
 #| msgid "Titre"
 msgid "Titre :"
@@ -59,7 +59,7 @@ msgstr "Titel"
 
 #: .\templates\base.html:33 .\templates\pages\home_page.html:27
 msgid "Guide audio"
-msgstr "Audioführer"
+msgstr "Audio Guide"
 
 #: .\templates\base.html:36 .\templates\contact\contact.html:13
 #: .\templates\pages\home_page.html:37
@@ -179,11 +179,13 @@ msgstr "Brückenkoordinaten - Google Map:"
 msgid "Coordonnées GPS :"
 msgstr "GPS-Koordinaten:"
 
-#: .\templates\position\detail.html:12
-#, fuzzy
-#| msgid "Description"
-msgid "Description :"
-msgstr "Beschreibung"
+#: .\templates\pages\start.html:9
+msgid "Bienvenue sur le guide audio"
+msgstr "Herzlich willkommen im Audio Guide"
+
+#: .\templates\position\positionItem.html:31
+msgid "Menu"
+msgstr ""
 
 #: .\templates\position\positions.html:10
 msgid "Points d'intérêts"
@@ -1363,6 +1365,11 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Description :"
+#~ msgstr "Beschreibung"
 
 #, fuzzy
 #~| msgid ""

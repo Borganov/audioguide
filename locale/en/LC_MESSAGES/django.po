@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-07 22:30+0100\n"
+"POT-Creation-Date: 2020-02-08 14:32+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "Activités"
 msgstr "Activities"
 
-#: .\templates\activity\detail.html:11 .\templates\position\detail.html:11
+#: .\templates\activity\detail.html:11
 #, fuzzy
 #| msgid "Titre"
 msgid "Titre :"
@@ -177,11 +177,13 @@ msgstr "Bridge coordinates - Google Map :"
 msgid "Coordonnées GPS :"
 msgstr "GPS coordinates :"
 
-#: .\templates\position\detail.html:12
-#, fuzzy
-#| msgid "Description"
-msgid "Description :"
-msgstr "Description"
+#: .\templates\pages\start.html:9
+msgid "Bienvenue sur le guide audio"
+msgstr "Welcome to the audio guide"
+
+#: .\templates\position\positionItem.html:31
+msgid "Menu"
+msgstr ""
 
 #: .\templates\position\positions.html:10
 msgid "Points d'intérêts"
@@ -1361,6 +1363,11 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Description :"
+#~ msgstr "Description"
 
 #~ msgid "Sujet:"
 #~ msgstr "Thema:"

@@ -22,19 +22,24 @@
     </audio>
 </figure>
 
-<table width="100%">
-    <tr>
-        <td style="text-align:left;">
-            <a href=""> <img src="{% static 'imgLogo/before.png' %}" style="width:50px"/> Point 30</a>
-        </td>
-        <td style="text-align:center;">
-            <a class="nav-link" href="/position">{% trans "Menu" %}</a>
-        </td>
-        <td style="text-align:right;">
-            <a href=""> Point 2 <img src="{% static 'imgLogo/after.png' %}" style="width:50px"/></a>
-        </td>
-    </tr>
-</table>
+<div class="parent" style="background-color:#c0342e;">
+                <div class="enfant">
+                    <a class="nav-link" href=""> <img src="{% static 'imgLogo/flecheBack.png' %}" style="width:50px"/><br><br><h2 style="color:white;"> Point 30</h2></a>
+                </div>
+                 <div class="enfant">
+                     <a class="nav-link" href="/position"><img src="{% static 'imgLogo/menu.png' %}" style="width:50px"/><br> <br><h2 style="color:white;">{% trans "Menu" %}</h2></a>
+        </div>
+                 <div class="enfant">
+                     <a class="nav-link" href=""><img src="{% static 'imgLogo/flecheNext.png' %}" style="width:50px"/><br><br><h2 style="color:white;">Point 2 </h2> </a>
+          </div>
+
+
+
+        </div>
+
+
+
+
 
 
 
