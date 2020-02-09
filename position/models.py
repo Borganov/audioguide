@@ -13,6 +13,7 @@ class Position(models.Model):
     order = models.IntegerField()
     name = models.CharField(max_length=100)
     objects = models.Manager()
+    state = models.BooleanField()
 
     def __str__(self):
         return '{order} - {name}'.format(order = self.order, name = self.name)
@@ -23,11 +24,13 @@ class Position(models.Model):
 class PositionItem(models.Model):
     titre = models.CharField(max_length=100)
     description = models.CharField(max_length=1000)
+    order = models.IntegerField()
     lang = models.CharField(max_length=2, verbose_name="Langue")
     audio = models.FileField(upload_to='static/audio/', default='static/audio/test4.mp3')
     img = models.ImageField(upload_to='static/imgPosition')
     position = models.ForeignKey('Position', on_delete=models.CASCADE)
     objects = models.Manager()
+    state = models.BooleanField()
 
     def __str__(self):
         return '{position} - {titre} - {description}'.format(position = self.position, titre = self.titre, description = self.description)

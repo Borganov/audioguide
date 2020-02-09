@@ -15,7 +15,7 @@ def accueil(request):
 
 
 def activity(request):
-    activities = Activity.objects.all()
+    activities = Activity.objects.filter(state=True).order_by('number')
     context = {
         'activities': activities,
     }
@@ -53,7 +53,7 @@ def location(request):
 
 
 def positions(request):
-    positions = Position.objects.all()
+    positions = Position.objects.filter(state=True, lang=request.LANGUAGE_CODE).order_by('order')
     context = {
         'positions': positions,
     }
@@ -62,7 +62,7 @@ def positions(request):
 
 
 def positionItem(request):
-    positions = PositionItem.objects.all()
+    positions = PositionItem.objects.filter(state=True, lang=request.LANGUAGE_CODE).order_by('order')
     context = {
         'positionItem': positions,
     }
