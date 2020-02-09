@@ -11,7 +11,8 @@
 <form action="" method="post">
     {% for activity in activities %}
     {% csrf_token %}
-    <button style="background-color:transparent; border-color:lightgrey;">
+    <button style="background-color:transparent; border-color:lightgrey; width:100%;">
+        <a href="{{activity.site}}">
         <div class="container-fluid">
             <div class="row top-buffer">
                 <div class="col-md-12">
@@ -28,7 +29,7 @@
                     <img src="{{ baseUrl }}/{{activity.img}}" class="responsive">
                 </div>
             </div>
-        </div>
+        </div></a>
     </button>
     <br> <br>
     {% endfor %}

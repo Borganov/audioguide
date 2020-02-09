@@ -15,7 +15,7 @@ def accueil(request):
 
 
 def activity(request):
-    activities = Activity.objects.filter(state=True).order_by('number')
+    activities = Activity.objects.filter(state=True, lang=request.LANGUAGE_CODE).order_by('number')
     context = {
         'activities': activities,
     }
