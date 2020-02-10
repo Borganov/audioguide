@@ -4,7 +4,8 @@ from audioguide import settings
 from activity.models import Language
 
 def image_upload_path(instance, filename):
-    return settings.MEDIA_ROOT + '/static/img'.format(instance.client_order.invoice, filename)
+    return settings.MEDIA_ROOT + 'static/img'.format(instance.client_order.invoice, filename)
+
 
 
 # Create your models here.
@@ -30,10 +31,7 @@ class PositionItem(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return '{position} - {titre} - {description}'.format(position = self.position, titre = self.titre, description = self.description)
+        return '{positionOrder} - {positionImg} - {audioUrl} - {titre} - {description}'.format(positionOrder = self.position.order, positionImg = self.position.img, audioUrl = self.audio, titre = self.titre, description = self.description)
 
     def __unicode__(self):
         return self.position.name
-
-
-
