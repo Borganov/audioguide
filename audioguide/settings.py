@@ -27,7 +27,9 @@ SECRET_KEY = '14($t12@feq%n9g-p7lg+^24rk^i3gk$uo(ar!gb(ifl)fkwoo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'pontsuspendu.pythonanywhere.com',
+]
 
 
 # Application definition
