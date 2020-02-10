@@ -4,6 +4,7 @@ from activity.models import Language
 
 
 def language(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
     languages = Language.objects.All()
     context = {
         'abreviation': languages,
