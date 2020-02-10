@@ -19,18 +19,19 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
+
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
 ]
 urlpatterns += i18n_patterns(
     path(_('admin/'), admin.site.urls),
     path('about/', include('about.urls')),
+    path('accueil/', include('start.urls')),
     path('activity/', include('activity.urls')),
     path('contact/', include('contact.urls')),
     path('don/', include('don.urls')),
     path('language/', include('language.urls')),
     path('location/', include('location.urls')),
     path('position/', include('position.urls')),
-    path('start/', include('start.urls')),
-
+    path('', include('start.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

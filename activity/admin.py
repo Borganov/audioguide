@@ -1,21 +1,29 @@
 from django.contrib import admin
 
 
-from activity.models import Activity, Language
+from activity.models import Activity, Language, ActivityItem
 
 
 class ActivityAdmin(admin.ModelAdmin):
-    list_display = ('lang','number', 'description', 'img', 'isActive', 'date', )
-    list_filter = ('number', 'description', 'img', 'isActive', 'date', 'lang',  )
-    search_fields = ('description', 'img', 'isActive', 'date', 'lang', )
-    list_editable = ('img', 'isActive','description', 'number',  )
+    list_display = ( 'date', 'number', 'isActive', 'img', )
+    list_filter = ('number', 'isActive', 'date', )
+    search_fields = ('isActive', 'date', )
+    list_editable = ('isActive', 'number', 'img')
+
+
+class ActivityItemAdmin(admin.ModelAdmin):
+    list_display = ('lang', 'title','description', 'activity', 'isActive')
+    list_filter = ('title', 'description', 'activity', 'lang', 'isActive')
+    search_fields = ('title', 'description', 'activity', 'lang', 'isActive')
+    list_editable = ('title', 'description', 'activity', 'isActive')
+
 
 class LanguageAdmin(admin.ModelAdmin):
-    list_display = ('designation','img', 'isActive',)
-    list_filter = ('designation','img', 'isActive', )
-    search_fields = ('designation','img', 'isActive',)
-    list_editable = ('img', 'isActive', )
-
+    list_display = ('abreviation','designation', 'img', 'isActive',)
+    list_filter = ('abreviation','designation', 'img', 'isActive',)
+    search_fields = ('abreviation','designation', 'img','isActive',)
+    list_editable = ('designation', 'img', 'isActive',)
 
 admin.site.register(Activity, ActivityAdmin)
 admin.site.register(Language, LanguageAdmin)
+admin.site.register(ActivityItem, ActivityItemAdmin)
