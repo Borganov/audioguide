@@ -4,7 +4,7 @@ from django.shortcuts import render
 from contact.forms import ContactForm
 
 
-def contact_us(request):
+def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():

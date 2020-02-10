@@ -1,47 +1,12 @@
-from django.http import HttpResponse
-from django.views.generic import  TemplateView
-from audioguide import settings
+from django.shortcuts import render
 
-from .models import Activity
-
-def index(request):
-    toPrint = Activity.objects.get(title="Titre1")
-    idInText = str(toPrint.id)
-    print(toPrint)
-    return HttpResponse("activity n° 1, Titre: " + toPrint.title + " description : " + idInText)
+from .models import Activity, Language
 
 
-class Detail(TemplateView):
-    #set html file to use
-    template_name = 'activity/detail.html'
-
-    def get_context_data(self, **kwargs):
-
-        #Traitement du formulaire
-        context = super().get_context_data(**kwargs)
-
-        #Get indicator data
-        id = kwargs.get('id')
-        context = Activity.objects.get(id=id).__dict__
-        print(context)
-
-        return context
-
-class All(TemplateView):
-    #set html file to use
-    template_name = 'activity/activities.html'
-
-    def get_context_data(self, **kwargs):
-
-        #Traitement du formulaire
-        context = super().get_context_data(**kwargs)
-
-        #Get indicator data
-        lang = kwargs.get('lang')
-        context = Activity.objects.filter(lang__startswith=lang)
-
-        print(context)
-
-        print({'activities' : context})
-
-        return {'activities' : context}
+def activity(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
+    activities = Activity.objects.filter(isActive=True, lang=lang.id).order_by('number')
+    context = {
+        'activities': activities,
+    }
+    return render(request, 'activity/activities.html', context)

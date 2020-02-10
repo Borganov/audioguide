@@ -24,5 +24,13 @@ urlpatterns = [
 ]
 urlpatterns += i18n_patterns(
     path(_('admin/'), admin.site.urls),
-    path('', include('templates.urls'))
+    path('', include('about.urls')),
+    path('', include('activity.urls')),
+    path('', include('contact.urls')),
+    path('', include('don.urls')),
+    path('', include('language.urls')),
+    path('', include('location.urls')),
+    path('', include('position.urls')),
+    path('', include('start.urls')),
+
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

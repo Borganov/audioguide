@@ -5,17 +5,17 @@ from .models import Position, PositionItem
 
 
 class PositionAdmin(admin.ModelAdmin):
-    list_display = ('lang', 'name', 'order', 'state', )
-    list_filter = ('order', 'name', 'state', )
-    search_fields = ('order', 'name', 'state', )
-    list_editable = ('name', 'order', 'state', )
+    list_display = ('name', 'order', 'isActive', )
+    list_filter = ('order', 'name', 'isActive', )
+    search_fields = ('order', 'name', 'isActive', )
+    list_editable = ('order', 'isActive', )
 
 
 class PositionItemAdmin(admin.ModelAdmin):
-    list_display = ('lang','position', 'order','img', 'titre', 'description', 'audio', 'state',  )
-    list_filter = ('titre', 'description', 'lang', 'audio', 'position','img','order', 'state', )
-    search_fields = ('titre', 'description', 'lang', 'audio', 'position','img','order', 'state', )
-    list_editable = ('titre', 'description', 'audio', 'position','img','order', 'state', )
+    list_display = ('lang','position', 'titre', 'description', 'audio', )
+    list_filter = ('titre', 'description', 'lang', 'audio', 'position',)
+    search_fields = ('titre', 'description', 'lang', 'audio', 'position', )
+    list_editable = ('titre', 'description', 'audio', 'position', )
 
 
 admin.site.register(Position, PositionAdmin)
