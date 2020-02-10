@@ -4,7 +4,8 @@ from audioguide import settings
 from activity.models import Language
 
 def image_upload_path(instance, filename):
-    return settings.MEDIA_ROOT + '/static/img'.format(instance.client_order.invoice, filename)
+    return settings.MEDIA_ROOT + 'static/img'.format(instance.client_order.invoice, filename)
+
 
 
 # Create your models here.
