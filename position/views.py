@@ -7,7 +7,8 @@ def detail(request):
     return render(request, 'position/detail.html')
 
 def positions(request):
-    positions = Position.objects.filter(state=True, lang=request.LANGUAGE_CODE).order_by('order')
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
+    positions = Position.objects.filter(state=True, lang=lang.id).order_by('order')
     context = {
         'positions': positions,
     }
