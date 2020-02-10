@@ -30,10 +30,7 @@ class PositionItem(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return '{position} - {titre} - {description}'.format(position = self.position, titre = self.titre, description = self.description)
+        return '{positionOrder} - {positionImg} - {audioUrl} - {titre} - {description}'.format(positionOrder = self.position.order, positionImg = self.position.img, audioUrl = self.audio, titre = self.titre, description = self.description)
 
     def __unicode__(self):
         return self.position.name
-
-
-

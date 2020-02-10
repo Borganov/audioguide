@@ -9,17 +9,18 @@
 <!-- Custom fonts for this template-->
 <h1>{% trans "Points d'intérêts" %}</h1><br>
 <form action="/positionItem" method="post">
-    {% for position in positions %}
+    {% for positionItem in positionItems %}
     {% csrf_token %}
     <button style="background-color:transparent; border-radius:10px; border-color:lightgrey; text-align:left; width:100%;">
-        <input type="hidden" value="{{position.id}}" readonly>
+        <input type="hidden" value="{{positionItem.id}}" readonly>
         <div class="container-fluid">
             <div class="row top-buffer">
                 <div class="col-md-2">
-                    <h2>{{position.order}}</h2>
+                    <h2>{{positionItem.position.order}}</h2>
+                    <img src="{{ baseUrl }}/{{positionItem.position.img}}" width="100" height="100">
                 </div>
                 <div class="col-md-10">
-                    <h2>{{position.name}}</h2><br>
+                    <h2>{{positionItem.titre}}</h2><br>
                 </div>
             </div>
         </div>
@@ -31,4 +32,3 @@
 
 
 {% endblock %}
-

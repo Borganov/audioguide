@@ -10,9 +10,10 @@ def detail(request):
 
 def positions(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    positions = Position.objects.filter(state=True, lang=lang.id).order_by('order')
+    positions = PositionItem.objects.filter(position__isActive=True, lang=lang.id).order_by('position__order')
+    print(positions)
     context = {
-        'positions': positions,
+        'positionItems': positions,
     }
 
     return render(request, 'position/positions.html', context)
