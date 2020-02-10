@@ -9,7 +9,9 @@ from position.models import PositionItem
 
 
 def accueil(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
     return render(request, 'pages/home_page.html')
 
 def start(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
     return render(request, 'pages/start.html')

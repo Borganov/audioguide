@@ -1,10 +1,13 @@
 from django.core.mail import send_mail
 from django.http import HttpResponse
 from django.shortcuts import render
+
+from activity.models import Language
 from contact.forms import ContactForm
 
 
 def contact(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
