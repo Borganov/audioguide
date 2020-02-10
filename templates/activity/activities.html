@@ -12,11 +12,11 @@
     {% for activity in activities %}
     {% csrf_token %}
     <button style="background-color:transparent; border-color:lightgrey; width:100%;">
-        <a href="{{activity.site}}">
+        <a href="{{ baseUrl }}/{{activityItem.activity.id}}">
         <div class="container-fluid">
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <h1><input type="hidden" value="{{activity.id}}" readonly> {{activity.title}}</h1>
+                    <h1>{{activity.title}}</h1>
                 </div>
             </div>
             <div class="row top-buffer" style="text-align:justify">
@@ -26,7 +26,8 @@
             </div>
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <img src="{{ baseUrl }}/{{activity.img}}" class="responsive">
+                    <img src="{{ baseUrl }}/{{activity.Activity.img}}" class="responsive">
+
                 </div>
             </div>
         </div></a>

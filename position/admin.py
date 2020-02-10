@@ -5,10 +5,10 @@ from .models import Position, PositionItem
 
 
 class PositionAdmin(admin.ModelAdmin):
-    list_display = ('name', 'order', 'isActive', )
-    list_filter = ('order', 'name', 'isActive', )
-    search_fields = ('order', 'name', 'isActive', )
-    list_editable = ('order', 'isActive', )
+    list_display = ('name', 'order', 'isActive', 'img', )
+    list_filter = ('order', 'name', 'isActive', 'img', )
+    search_fields = ('order', 'name', 'isActive', 'img', )
+    list_editable = ('order', 'isActive', 'img',)
 
 
 class PositionItemAdmin(admin.ModelAdmin):
