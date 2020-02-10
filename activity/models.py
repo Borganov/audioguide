@@ -4,7 +4,7 @@ from audioguide import settings
 
 
 def image_upload_path(instance, filename):
-    return settings.MEDIA_ROOT + '/static/img'.format(instance.client_order.invoice, filename)
+    return '/static/img'.format(instance.client_order.invoice, filename)
 
 
 # Create your models here.
@@ -26,6 +26,7 @@ class Activity(models.Model):
 
 class ActivityItem(models.Model):
     lang = models.ForeignKey('activity.Language', on_delete=models.DO_NOTHING, default=1)
+    order = models.IntegerField(default=1)
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=1000)
     objects = models.Manager()
@@ -33,7 +34,7 @@ class ActivityItem(models.Model):
     activity = models.ForeignKey('Activity', on_delete=models.CASCADE)
 
     def __str__(self):
-        return '{activityNumber} - {activityImg} - {description}'.format(activityNumber = self.activity.number, activityImg = self.activity.img, description = self.description)
+        return '{activityNumber} - {activityImg} - {description} - {order}'.format(activityNumber = self.activity.number, activityImg = self.activity.img, description = self.description, order = self.order)
 
     def __unicode__(self):
         return self.activity.title

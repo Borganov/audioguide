@@ -8,15 +8,15 @@
 {% block content %}
 <!-- Custom fonts for this template-->
 <h1>{% trans "Activités" %}</h1><br>
-<form action="" method="post">
+
     {% for activity in activities %}
     {% csrf_token %}
-    <button style="background-color:transparent; border-color:lightgrey; width:100%;">
-        <a href="{{ baseUrl }}/{{activityItem.activity.id}}">
+
+        <a href="{{ baseUrl }}/{{activity.id}}">
+
         <div class="container-fluid">
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <h1>{{activity.title}}</h1>
                 </div>
             </div>
             <div class="row top-buffer" style="text-align:justify">
@@ -26,14 +26,13 @@
             </div>
             <div class="row top-buffer">
                 <div class="col-md-12">
-                    <img src="{{ baseUrl }}/{{activity.Activity.img}}" class="responsive">
-
+                    <img src="{{ baseUrl }}/{{activity.activity.img}}" width="100" height="100">
                 </div>
             </div>
         </div></a>
-    </button>
+
     <br> <br>
     {% endfor %}
-</form>
+
 
     {% endblock %}
