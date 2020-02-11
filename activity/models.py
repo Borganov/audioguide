@@ -28,7 +28,7 @@ class ActivityItem(models.Model):
     lang = models.ForeignKey('activity.Language', on_delete=models.DO_NOTHING, default=1)
     order = models.IntegerField(default=1)
     title = models.CharField(max_length=200)
-    description = models.CharField(max_length=1000)
+    description = models.TextField(max_length=1000)
     objects = models.Manager()
     isActive = models.BooleanField(default=True)
     activity = models.ForeignKey('Activity', on_delete=models.CASCADE)

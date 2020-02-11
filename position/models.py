@@ -3,6 +3,7 @@ from django.db import models
 from audioguide import settings
 from activity.models import Language
 
+
 def image_upload_path(instance, filename):
     return settings.MEDIA_ROOT + 'static/img'.format(instance.client_order.invoice, filename)
 
@@ -24,7 +25,7 @@ class Position(models.Model):
 
 class PositionItem(models.Model):
     titre = models.CharField(max_length=100)
-    description = models.CharField(max_length=1000)
+    description = models.TextField(max_length=10000)
     lang = models.ForeignKey('activity.Language', on_delete=models.DO_NOTHING)
     audio = models.FileField(upload_to='static/audio/', default='static/audio/test4.mp3')
     position = models.ForeignKey('Position', on_delete=models.CASCADE)
