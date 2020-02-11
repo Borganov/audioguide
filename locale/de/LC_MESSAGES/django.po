@@ -20,23 +20,23 @@ msgstr ""
 
 #: .\audioguide\settings.py:115
 msgid "Français"
-msgstr ""
+msgstr "Französisch"
 
 #: .\audioguide\settings.py:116
 msgid "English"
-msgstr ""
+msgstr "Englisch"
 
 #: .\audioguide\settings.py:117
 msgid "Deutsch"
-msgstr ""
+msgstr "Deutsch"
 
 #: .\audioguide\urls.py:26
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: .\templates\about\about.html:10
 msgid "A propos de l'application"
-msgstr "Über die Anwendung von"
+msgstr "Über die Applikation"
 
 #: .\templates\about\about.html:11
 msgid "Auteurs"
@@ -44,18 +44,18 @@ msgstr "Autoren"
 
 #: .\templates\about\about.html:12
 msgid "Version"
-msgstr "Ausgabe"
+msgstr "Version"
 
 #: .\templates\activity\activities.html:10 .\templates\base.html:30
 #: .\templates\pages\home_page.html:32
 msgid "Activités"
-msgstr "Tätigkeiten"
+msgstr "Aktivitäten"
 
 #: .\templates\activity\detail.html:11
 #, fuzzy
 #| msgid "Titre"
 msgid "Titre :"
-msgstr "Titel"
+msgstr "Titel :"
 
 #: .\templates\base.html:33 .\templates\pages\home_page.html:27
 msgid "Guide audio"
@@ -76,11 +76,11 @@ msgstr "Sprache"
 
 #: .\templates\base.html:45 .\templates\pages\home_page.html:47
 msgid "A propos"
-msgstr "Über"
+msgstr "Über uns"
 
 #: .\templates\contact\contact.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
-msgstr "Haben Sie eine Frage? Kontaktieren Sie uns!"
+msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
 
 #: .\templates\contact\contact.html:22
 msgid "ENVOYER"
@@ -88,11 +88,11 @@ msgstr "SENDEN"
 
 #: .\templates\contact\contact.html:24
 msgid "Adresse administrative de l’association :"
-msgstr "Verwaltungsanschrift der Vereinigung :"
+msgstr "Postadresse des Vereins :"
 
 #: .\templates\don\don.html:10
 msgid "Faire un don"
-msgstr "Eine spende machen"
+msgstr "Spenden"
 
 #: .\templates\don\don.html:13
 msgid ""
@@ -106,7 +106,7 @@ msgstr ""
 
 #: .\templates\language\language.html:14
 msgid "Choix de la langue"
-msgstr "Wahl der Sprache"
+msgstr "Sprache wählen"
 
 #: .\templates\language\language.html:16
 msgid "Langue actuelle :"
@@ -114,11 +114,11 @@ msgstr "Aktuelle Sprache :"
 
 #: .\templates\language\language.html:17
 msgid "Changer de langue"
-msgstr "Sprache wechseln"
+msgstr "Sprache ändern"
 
 #: .\templates\language\language.html:38
 msgid "Enregistrer mon choix"
-msgstr "Wahl aufnehmen"
+msgstr "Speichern"
 
 #: .\templates\location\location.html:10
 msgid "Localisation et horaires"
@@ -132,24 +132,24 @@ msgid ""
 "soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
 "par une petite route forestière."
 msgstr ""
-"Die Niouc-Hängebrücke liegt unweit von Sierre im Wallis (Schweiz). Um mit "
+"Die Hängebrücke von Niouc liegt unweit von Sierre im Wallis (Schweiz). Um mit "
 "dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, dann "
-"nehmen Sie den Kreisverkehr und fahren Sie zum Val d'Anniviers. Nach dem "
-"Dorf Niouc, achten Sie auf die Beschilderung, der Zugang zur Brücke liegt "
-"auf einer Kurve, über eine kleine Forststraße."
+"den Kreisverkehr und fahren zum Val d'Anniviers. Nach dem Dorf Niouc "
+"achten Sie auf die Beschilderung, der Zugang zur Brücke liegt in einer "
+"Kurve und kann über eine kleine Forststraße erreicht werden."
 
 #: .\templates\location\location.html:16
 msgid ""
 "L’accès au site est gratuit. La traversée du pont coûte 5frs. L’intégralité "
 "des bénéfices est affecté à l’entretien du pont et aux projets en cours."
 msgstr ""
-"Der Zugriff auf die Website ist kostenlos. Überqueren der Brücke kostet "
-"5frs. Alle Gewinne fließen in die Wartung der Brücke und in laufende "
-"Projekte."
+"Der Zugriff auf die Website ist kostenlos. Für das Überqueren der Brücke "
+"werden CHF 5 fällig. Alle Erträge fließen ganzheitlich in die Wartung der "
+"Brücke und in laufende Projekte."
 
 #: .\templates\location\location.html:17
 msgid "Le pont est ouvert au public :"
-msgstr "Die Brücke steht der Öffentlichkeit offen:"
+msgstr "Die Brücke ist für die Öffentlichkeit verfügbar :"
 
 #: .\templates\location\location.html:18
 msgid "De début avril à fin octobre,"
@@ -185,23 +185,23 @@ msgstr "Herzlich willkommen im Audio Guide"
 
 #: .\templates\position\positionItem.html:31
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: .\templates\position\positions.html:10
 msgid "Points d'intérêts"
-msgstr "Zinspunkt"
+msgstr "Posten"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
-msgstr ""
+msgstr "Nachrichten"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:7
 msgid "Site Maps"
-msgstr ""
+msgstr "Site Maps"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"
-msgstr ""
+msgstr "Static Files"
 
 #: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
 msgid "Syndication"
@@ -347,7 +347,7 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\base.py:1162
 #: .\venv\Lib\site-packages\django\forms\models.py:756
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: .\venv\Lib\site-packages\django\db\models\base.py:1164
 #, python-format
