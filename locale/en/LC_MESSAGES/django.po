@@ -20,19 +20,19 @@ msgstr ""
 
 #: .\audioguide\settings.py:115
 msgid "Français"
-msgstr ""
+msgstr "French"
 
 #: .\audioguide\settings.py:116
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: .\audioguide\settings.py:117
 msgid "Deutsch"
-msgstr ""
+msgstr "German"
 
 #: .\audioguide\urls.py:26
 msgid "admin/"
-msgstr ""
+msgstr "admin/"
 
 #: .\templates\about\about.html:10
 msgid "A propos de l'application"
@@ -44,7 +44,7 @@ msgstr "Authors"
 
 #: .\templates\about\about.html:12
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: .\templates\activity\activities.html:10 .\templates\base.html:30
 #: .\templates\pages\home_page.html:32
@@ -55,7 +55,7 @@ msgstr "Activities"
 #, fuzzy
 #| msgid "Titre"
 msgid "Titre :"
-msgstr "Titel"
+msgstr "Title"
 
 #: .\templates\base.html:33 .\templates\pages\home_page.html:27
 msgid "Guide audio"
@@ -80,7 +80,7 @@ msgstr "About"
 
 #: .\templates\contact\contact.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
-msgstr "Have a question to ask us? Contact us!"
+msgstr "Do you have any question? Feel free to contact us!"
 
 #: .\templates\contact\contact.html:22
 msgid "ENVOYER"
@@ -88,7 +88,7 @@ msgstr "SEND"
 
 #: .\templates\contact\contact.html:24
 msgid "Adresse administrative de l’association :"
-msgstr "Administrative address of the association :"
+msgstr "Postal address of the association :"
 
 #: .\templates\don\don.html:10
 msgid "Faire un don"
@@ -100,8 +100,8 @@ msgid ""
 "soutenir notre association et développer de nouvelles activités en relation "
 "avec notre pont suspendu :"
 msgstr ""
-"Using the payment slip below you can make a donation to support our "
-"association and develop new activities related to our suspension bridge:"
+"Donations are possible by using the payment slip below to support our "
+"association and develop new activities related to our suspension bridge :"
 
 #: .\templates\language\language.html:14
 msgid "Choix de la langue"
@@ -117,7 +117,7 @@ msgstr "Change language"
 
 #: .\templates\language\language.html:38
 msgid "Enregistrer mon choix"
-msgstr "Save my choice"
+msgstr "Save"
 
 #: .\templates\location\location.html:10
 msgid "Localisation et horaires"
@@ -131,9 +131,9 @@ msgid ""
 "soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
 "par une petite route forestière."
 msgstr ""
-"The Niouc suspension bridge is located not far from Sierre, in Valais "
-"(Switzerland). To get there by car, take the Sierre-Est exit, then at the "
-"roundabout, take the direction of Val d´Anniviers. After the village of "
+"The suspension bridge of Niouc is located near Sierre, in Valais "
+"(Switzerland). To get there by car, take the highway exit Sierre-Est, then at the "
+"roundabout, it's direction of Val d´Anniviers. After the village of "
 "Niouc, pay attention to the signs, the access to the bridge is located in a "
 "curve, by a small forest road."
 
@@ -142,8 +142,8 @@ msgid ""
 "L’accès au site est gratuit. La traversée du pont coûte 5frs. L’intégralité "
 "des bénéfices est affecté à l’entretien du pont et aux projets en cours."
 msgstr ""
-"Access to the site is free. Crossing the Bridge Costs 5frs. All of the "
-"profits are used for bridge maintenance and ongoing projects."
+"Access to the site is free. Crossing the Bridge costs 5frs. All of the "
+"profits are used for maintaining our bridge and ongoing projects."
 
 #: .\templates\location\location.html:17
 msgid "Le pont est ouvert au public :"
@@ -159,7 +159,7 @@ msgstr "only weekends,"
 
 #: .\templates\location\location.html:20 .\templates\location\location.html:25
 msgid "de 11h à 18h"
-msgstr "11 a.m. to 6 p.m."
+msgstr "from 11 a.m. to 6 p.m."
 
 #: .\templates\location\location.html:23
 msgid "Du 18 juillet au 18 août,"
@@ -187,15 +187,15 @@ msgstr ""
 
 #: .\templates\position\positions.html:10
 msgid "Points d'intérêts"
-msgstr "Points of interest"
+msgstr "Posts"
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:7
 msgid "Messages"
-msgstr ""
+msgstr "Messages"
 
 #: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:7
 msgid "Site Maps"
-msgstr ""
+msgstr "Site Maps"
 
 #: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
 msgid "Static Files"

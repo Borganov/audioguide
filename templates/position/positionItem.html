@@ -1,28 +1,50 @@
 {% extends "base.html" %}
-
 {% load static %}
-
 {% static "" as baseUrl %}
-
-
 {% load i18n %}
 {% block content %}
+
 <!-- Custom fonts for this template-->
 <link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
 
-<img src="{{ baseUrl }}/{{position.img}}" class="responsive" style="max-width:700px"/>
-<br><br>
-<h1>Titre {{positionItem.titre}}</h1><br>
+<!-- Custom style for this page -->
+<style>
+.thumbnail {
+    width: 90%;
+    height: auto>;
+    overflow: auto;
+}
 
-<p>Description {{positionItem.description}}</p><br>
+.thumbnail img {
+    max-height: 30em;
+    max-width: 100%;
+    display: block;
+}
 
-<figure>
-    <figcaption></figcaption>
-    <audio
-            controls
-            src="{{ baseUrl }}/{{positionItem.audio}}">
-        Your browser does not support the
-        <code>audio</code> element.
-    </audio>
-</figure>
+.responsiveTitle {
+    font-size: 4.5vw;
+}
+
+.responsiveText {
+    font-size: 2vw;
+}
+
+audio {
+    width: 90%;
+}
+</style>
+
+<div class="container-fluid content-height" align="center">
+    <div class="thumbnail">
+        <img src="{{ baseUrl }}/{{position.img}}" />
+        <div class="caption">
+            <h1 class="responsiveTitle">{{positionItem.titre}}</h1>
+            <p class="responsiveText">{{positionItem.description}}</p>
+            <audio controls>
+                <source src="{{ baseUrl }}/{{positionItem.audio}}">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+    </div>
+</div>
 {% endblock %}

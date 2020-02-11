@@ -1,37 +1,37 @@
-  {% extends "base.html" %}
-  {% load static %}
+    {% extends "base.html" %}
+    {% load static %}
 
-  {% static "" as baseUrl %}
+    {% static "" as baseUrl %}
 
 
-  {% load i18n %}
-  {% block content %}
-  <div class="container-fluid">
-  <div class="row top-buffer">
-    <div class="col-md-2"> </div>
-    <div class="col-md-8">
-      <p align="center">
-      <div class="jumbotron jt-contact">
-        <h1>{% trans "Points d'intérêts" %}</h1>
-      </div>
-      </p>
-    </div>
-    <div class="col-md-2"> </div>
-  </div>
-  {% for positionItem in positionItems %}
-  <a href="{{positionItem.id}}"><div class="row top-buffer">
-    <div class="col-md-2"> </div>
+    {% load i18n %}
+    {% block content %}
+    <div class="container-fluid content-height">
+    <div class="row top-buffer">
+      <div class="col-md-2"> </div>
       <div class="col-md-8">
-        <div class="panel panel-default panel-title panel-body">
-          <div> <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imageActivity" alt="imageText" />
-            <h2 class="h2ActivityList">{{positionItem.titre}}</h2>
-            <br>
-            <p>{{positionItem.description}}</p>
-          </div>
+        <h1 class="postition_title">{% trans "Points d'intérêts" %}</h1>
+      </div>
+      <div class="col-md-2"> </div>
+    </div>
+    {% for positionItem in positionItems %}
+    <a href="{{positionItem.id}}"><div class="row top-buffer">
+        <div class="col-md-8 col-offset-md-2 col-sm-12 align-middle panel panel-default">
+
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imagePositionList" alt="imageText" />
+              </div>
+              <div class="col-sm-9">
+                <h2 class="h2ActivityList">{{positionItem.titre}}</h2>
+                <br>
+                <p>{{positionItem.description}}</p>
+              </div>
+            </div>
+
         </div>
       </div>
-    </div>
-  </a>
-  {% endfor %}
-    </div>
-  {% endblock %}
+    </a>
+    {% endfor %}
+      </div>
+    {% endblock %}
