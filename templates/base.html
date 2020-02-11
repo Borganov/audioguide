@@ -3,75 +3,61 @@
 
 {#{% static "" as baseUrl %}#}
 {% load i18n %}
-<html lang="en" dir="ltr">
+<html>
 <head>
-  <title>Audioguide</title>
-
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
-<link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+<title>Les amis du pont suspendu à Niouc</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'css/all.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
-      <div class="container">
-      <a class="navbar-brand" href="/accueil"><img src="{% static 'img/Logo.png' %}" style="width:100px"/></a>
-      <a class="navbar-brand" href="/accueil"><img src="{% static 'img/maison.png' %}" style="width:30px"/></a>
-        <a class="navbar-brand" href="/don"><img src="{% static 'img/don.jpg' %}" style="width:30px"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/activity">{% trans "Activités" %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/positionItem">{% trans "Guide audio" %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">{% trans "Contact" %}</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="/location">{% trans "Accès" %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/language">{% trans "Langue" %}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">{% trans "A propos" %}</a>
-          </li>
-        </ul>
-      </div>
+<body class="bodyBG" onLoad="MM_preloadImages('images/FRANCAIS2.png','images/DEUTSCH2.png','images/ENGLISH2.png')">
+<!-- Navigation (header) -->
+<nav class="navbar navbar-inverse main-color">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <!-- Collapse button -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="textBlack navbar-brand" href="/">Audioguide Niouc</a> </div>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- Links -->
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/activity">{% trans "Activités" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="/position">{% trans "Guide audio" %}</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">{% trans "Contact" %}</a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="">{% trans "Langue" %}</a></li>-->
+        <li class="nav-item"><a class="nav-link" href="/about">{% trans "A propos" %}</a></li>
+      </ul>
     </div>
-    </nav>
-  </header>
-  <div class="container">
-    {% block content %}{% endblock %}
   </div>
-  <br>
-<footer class="site-footer">
+</nav>
 
-<div >
-
-    <div style="color:white">
-      <a href="https://www.facebook.com/pontsuspenduniouc"><img src="{% static 'img/facebook.png' %}" style="width:15px"/>
-        </a><br>
-    &copy; Association des amis du pont suspendu de Niouc, 2020
-    </div>
-
+<!-- Page content -->
+<div class="container content neg-mrg">
+  {% block content %}
+    <!-- CONTENT -->
+    <!-- CONTENT -->
+    <!-- CONTENT -->
+    <!-- CONTENT -->
+  {% endblock %}
 </div>
+<!-- Footer -->
+<footer class="fixed-bottom page-footer main-color top-buffer ">
+  <div class="container" style="text-align: center;">
+    <!-- Internet -->
+    <a href="https://www.pontsuspendu.ch/"> <i class="fas fa-globe-europe" style="color:white;"></i> </a>
 
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/pontsuspenduniouc"> <i class="fab fa-facebook" style="color:white;"></i> </a> </div>
+
+  <!-- Copyright -->
+  <div class="text-center textDarkGray">© 2019 Copyright: HES-SO Valais-Wallis</div>
 </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
-
 </html>

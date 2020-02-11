@@ -6,29 +6,29 @@
 
 {% load i18n %}
 {% block content %}
-<!-- Custom fonts for this template-->
-<h1>{% trans "Points d'intérêts" %}</h1><br>
-<form action="/positionItem" method="post">
-    {% for positionItem in positionItems %}
-    {% csrf_token %}
-    <button style="background-color:transparent; border-radius:10px; border-color:lightgrey; text-align:left; width:100%;">
-        <input type="hidden" value="{{positionItem.id}}" readonly>
-        <div class="container-fluid">
-            <div class="row top-buffer">
-                <div class="col-md-2">
-                    <h2>{{positionItem.position.order}}</h2>
-                    <img src="{{ baseUrl }}/{{positionItem.position.img}}" width="100" height="100">
-                </div>
-                <div class="col-md-10">
-                    <h2>{{positionItem.titre}}</h2><br>
-                </div>
-            </div>
-        </div>
-    </button>
-    <br>    <br>
-    {% endfor %}
-    </table>
-</form>
-
-
+<div class="row top-buffer">
+  <div class="col-md-2"> </div>
+  <div class="col-md-8">
+    <p align="center">
+    <div class="jumbotron jt-contact">
+      <h1>{% trans "Points d'intérêts" %}</h1>
+    </div>
+    </p>
+  </div>
+  <div class="col-md-2"> </div>
+</div>
+{% for positionItem in positionItems %}
+<div class="row top-buffer">
+  <div class="col-md-2"> </div>
+  <div class="col-md-8">
+    <div class="panel panel-default panel-title panel-body">
+      <div> <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imageActivity" alt="imageText" />
+        <h2 class="h2ActivityList">{{positionItem.titre}}</h2>
+        <br>
+        <p>{{positionItem.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
 {% endblock %}
