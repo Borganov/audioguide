@@ -1,47 +1,37 @@
-from django.http import HttpResponse
-from django.views.generic import  TemplateView
-from audioguide import settings
+from pyexpat import model
 
-from .models import Activity
+from django.shortcuts import render
+from django.views.generic import TemplateView
 
-def index(request):
-    toPrint = Activity.objects.get(title="Titre1")
-    idInText = str(toPrint.id)
-    print(toPrint)
-    return HttpResponse("activity n° 1, Titre: " + toPrint.title + " description : " + idInText)
+from .models import Language, ActivityItem, Activity
+
+
+def activity(request):
+    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
+    activities = ActivityItem.objects.filter(isActive=True, lang=lang.id).order_by('activity__number')
+    context = {
+        'activities': activities,
+    }
+    return render(request, 'activity/activities.html', context)
 
 
 class Detail(TemplateView):
     #set html file to use
-    template_name = 'activity/detail.html'
+    template_name = 'activity/activityItem.html'
 
     def get_context_data(self, **kwargs):
+        lang = Language.objects.get(abreviation=self.request.LANGUAGE_CODE)
 
         #Traitement du formulaire
         context = super().get_context_data(**kwargs)
+
 
         #Get indicator data
         id = kwargs.get('id')
-        context = Activity.objects.get(id=id).__dict__
-        print(context)
+        activityItem = ActivityItem.objects.get(id=id)
+        activity = Activity.objects.get(id=activityItem.activity_id).__dict__
+        print(activity)
+        activityItem = activityItem.__dict__
 
-        return context
+        return {'activityItem' : activityItem, 'activity':activity}
 
-class All(TemplateView):
-    #set html file to use
-    template_name = 'activity/activities.html'
-
-    def get_context_data(self, **kwargs):
-
-        #Traitement du formulaire
-        context = super().get_context_data(**kwargs)
-
-        #Get indicator data
-        lg = kwargs.get('lg')
-        context = Activity.objects.filter(lang__startswith=lg)
-
-        print(context)
-
-        print({'activities' : context})
-
-        return {'activities' : context}

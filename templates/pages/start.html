@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{#{% static "" as baseUrl %}#}
+{% load i18n %}
+{% block content %}
+
+    <div>
+        <h1>{% trans "Bienvenue sur le guide audio" %}</h1>
+        <br>
+    <a href="/accueil"><img src="{% static 'imgLogo/start.png' %}" class="responsive"/></a>
+    </div>
+
+{% endblock %}

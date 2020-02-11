@@ -1,53 +1,66 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en" xmlns:padding="http://www.w3.org/1999/xhtml">
-<head>
-  <title>Audioguide</title>
+  <!DOCTYPE html>
+  {% load static %}
+
+  {#{% static "" as baseUrl %}#}
+  {% load i18n %}
+  <html>
+  <head>
+  <title>Les amis du pont suspendu à Niouc</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="{% static 'css/all.css' %}">-->
+  <script src="https://kit.fontawesome.com/67065feb7d.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="{% static 'main.css' %}">
-  <style>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="main-color" onLoad="MM_preloadImages('images/FRANCAIS2.png','images/DEUTSCH2.png','images/ENGLISH2.png')">
+  <!-- Navigation (header) -->
+  <nav class="navbar navbar-inverse main-color">
+    <div class="container-fluid">
+      <div class="navbar-header">
 
-  body {
-  background-color:#C7342D;
-  }
-div {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-}
-tr {
-background-color:white;
-  border: 20px solid black;
-  border-color:#C7342D;
-  padding-top: 15px;
- padding-bottom: 15px;
-}
-td {
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align : justify;
-}
+        <!-- Collapse button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="textBlack navbar-brand" href="/">Audioguide du pont suspendu de Niouc</a>
+      </div>
 
-h1 {
-color:white;
-text-align:center;
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="menu">
+        <!-- Links -->
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/activity">{% trans "Activités" %}</a></li>
+          <li class="nav-item"><a class="nav-link" href="/position">{% trans "Guide audio" %}</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">{% trans "Contact" %}</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="">{% trans "Langue" %}</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="/about">{% trans "A propos" %}</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-}
+  <!-- Page content -->
+  <div class="container bodyBG neg-mrg">
+    {% block content %}
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+    {% endblock %}
+  </div>
 
-h2 {
-color:#C7342D;
-}
+  <!-- Footer -->
+  <footer class="navbar navbar-fixed-bottom main-color top-buffer">
+    <div class="container" style="text-align: center;">
+      <!-- Internet -->
+      <a href="https://www.pontsuspendu.ch/" target="_blank"><i class="fas fa-2x fa-globe-europe icon-white"></i></a>&nbsp;&nbsp;
 
-</style>
-</head>
-<body>
-  {% block content %}
-
-  {% endblock %}
-</body>
-</html>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/pontsuspenduniouc" target="_blank"><i class="fab fa-2x fa-facebook icon-white top-buffer pad-btm"></i> </a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center textDarkGray pad-btm">© 2019 Copyright: HES-SO Valais-Wallis</div>
+  </footer>
+  </body>
+  </html>

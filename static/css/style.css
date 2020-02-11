@@ -1,0 +1,137 @@
+/* Body Styles */
+.bodyBG {
+  background: #C7342D;
+}
+
+/* Color Styles */
+.icon-white {
+  color: white;
+}
+.textDarkGray {
+  color: darkgray;
+}
+.navbar-brand {
+  color: darkgray;
+}
+.textBlack {
+  color: black;
+}
+.darker-color {
+  color: #9d282a;
+}
+.main-color {
+  background-color: #222222;
+}
+.h1ActivityList {
+  color: white;
+}
+.h2ActivityList {
+  color: #C7342D;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Semantic Tag Styles */
+.content-height {
+  height: 100vh;
+}
+
+/* Padding, margin Styles */
+.neg-mrg {
+  margin-top: -20px;
+}
+.neg-mrg-btm {
+  margin-bottom: -20px;
+}
+.top-buffer {
+  margin-top: 15px;
+}
+.pad-btm {
+  padding-bottom: 25px;
+}
+
+/* Image styles */
+.imageActivity {
+  float: left;
+  padding-right: 10px;
+  width: 30%;
+}
+
+/* Alignment Styles */
+.centeredDIV {
+  align-content: center;
+}
+
+/* Activity or position specific Styles */
+.divActivityList {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+.tableWidthActivity {
+  width: 100%;
+}
+.trActivityList {
+  background-color: white;
+  border: 20px solid black;
+  border-color: #C7342D;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.tdActivityList {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: justify;
+}
+
+/* Button Styles */
+.btn-xxl {
+  color: black;
+  background-color: lightgray;
+  padding: 20px 26px;
+  font-size: 35px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+}
+.btn-danger:hover {
+  background-color: #9d282a;
+  border-color: lightgray;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.btn {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  background: gray;
+}
+.btnStart {
+  position: relative;
+  height: 100px;
+  margin-bottom: 20px;
+  padding-top: 33px;
+  text-align: center;
+  font-size: 150%;
+  color: #333;
+  background: gray;
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar-hamburger {
+  cursor: pointer;
+}

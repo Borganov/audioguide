@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% static "" as baseUrl %}
+
+
+{% load i18n %}
+{% block content %}
+
+<!-- Custom fonts for this template-->
+{% get_current_language as LANGUAGE_CODE %}
+
+
+<h1>{% trans "Choix de la langue" %}</h1><br>
+
+<h3>{% trans "Langue actuelle :"  %} {{LANGUAGE_CODE}}</h3><br>
+<h3>{% trans "Changer de langue" %}</h3><br>
+
+
+<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+
+<table>
+    {% for language in languages %}
+    {% csrf_token %}
+ <tr>
+   <th>
+       <label class="switch">
+  <input type="radio" name="language" value="{{ language.abreviation}}">
+  <span class="slider round"></span>
+    </label>
+   </th>
+   <th><h3>{{language.designation}}</h3></th>
+ </tr>
+     {% endfor %}
+</table>
+<br>
+    <input class="btn btn-primary" type="submit" value="{% trans 'Enregistrer mon choix' %}">
+</form>
+
+
+
+
+
+{% endblock %}

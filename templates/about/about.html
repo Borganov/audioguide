@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% static "" as baseUrl %}
+
+{% load i18n %}
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>{% trans "A propos de l'application" %}</h1>
+<h2>{% trans "Auteurs" %}</h2>
+<h2>{% trans "Version" %}</h2>
+
+{% endblock %}

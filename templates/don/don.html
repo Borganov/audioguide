@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% static "" as baseUrl %}
+
+{% load i18n %}
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>{% trans "Faire un don" %}</h1>
+
+
+<p>{% trans "A l’aide du bulletin de versement ci-dessous vous pouvez faire un don, pour soutenir notre association et développer de nouvelles activités en relation avec notre pont suspendu :" %}</p>
+<img src="{% static 'imgDon/bv.jpg' %}" class="responsive">
+
+{% endblock %}

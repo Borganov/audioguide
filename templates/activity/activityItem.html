@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% static "" as baseUrl %}
+
+{% block content %}
+<!-- Custom fonts for this template-->
+<h1>{{activityItem.title}}</h1>
+<img src="{{ baseUrl }}/{{activity.img}}"/>
+<h3>{{activityItem.description}}</h3>
+{% endblock %}

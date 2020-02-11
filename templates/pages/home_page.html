@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{#{% static "" as baseUrl %}#}
+{% load i18n %}
+{% block content %}
+
+
+    <div class="banner">
+    <img src="{% static 'imgPosition/Niouc-Pont-Suspendu.jpg' %}" class="responsive" />
+
+
+    </div><br>
+
+
+<table style="width:100%;">
+
+ <tr>
+        <td class="indent">
+         <h1><a href="/language"> <img src="{% static 'imgLogo/roue.png' %}" style="width:10%"/>   {% trans "Langue" %}</a> </h1></td>
+
+     <td>
+        </td>
+    </tr>
+    <tr>
+        <td class="indent">
+            <h1><a href="/positionItem"><img src="{% static 'imgLogo/direction.png' %}" style="width:10%"/>   {% trans "Guide audio" %}</a></h1>
+        </td>
+    </tr>
+      <tr>
+        <td class="indent">
+          <h1> <a href="/activity"><img src="{% static 'imgLogo/content.png' %}" style="width:10%"/>   {% trans "Activités" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td class="indent">
+           <h1> <a href="/contact"><img src="{% static 'imgLogo/message.png' %}" style="width:10%"/>   {% trans "Contact" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td class="indent">
+          <h1> <a href="/location"><img src="{% static 'imgLogo/map.png' %}" style="width:10%"/>   {% trans "Accès" %}</a></h1>
+        </td>
+    </tr>
+          <tr>
+        <td class="indent">
+            <h1> <a href="/about"><img src="{% static 'imgLogo/info.png' %}" style="width:10%"/> {% trans "A propos" %}</a></h1>
+        </td>
+    </tr>
+
+
+</table>
+
+
+{% endblock %}
