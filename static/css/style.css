@@ -154,3 +154,8 @@
 .test{
   background-color: green;
 }
+
+/*Contact form*/
+.contactForm_field {
+  width: 100%;
+}
