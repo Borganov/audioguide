@@ -53,6 +53,9 @@
 .pad-btm {
   padding-bottom: 25px;
 }
+.btm-content-padding {
+  padding-bottom: 110px;
+}
 
 /* Image styles */
 .imageActivity {
