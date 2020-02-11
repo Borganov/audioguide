@@ -1,65 +1,66 @@
-<!DOCTYPE html>
-{% load static %}
+  <!DOCTYPE html>
+  {% load static %}
 
-{#{% static "" as baseUrl %}#}
-{% load i18n %}
-<html>
-<head>
-<title>Les amis du pont suspendu à Niouc</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<!--<link rel="stylesheet" href="{% static 'css/all.css' %}">-->
-<script src="https://kit.fontawesome.com/67065feb7d.js" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body class="bodyBG" onLoad="MM_preloadImages('images/FRANCAIS2.png','images/DEUTSCH2.png','images/ENGLISH2.png')">
-<!-- Navigation (header) -->
-<nav class="navbar navbar-inverse main-color">
-  <div class="container-fluid">
-    <div class="navbar-header">
+  {#{% static "" as baseUrl %}#}
+  {% load i18n %}
+  <html>
+  <head>
+  <title>Les amis du pont suspendu à Niouc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="{% static 'css/all.css' %}">-->
+  <script src="https://kit.fontawesome.com/67065feb7d.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="main-color" onLoad="MM_preloadImages('images/FRANCAIS2.png','images/DEUTSCH2.png','images/ENGLISH2.png')">
+  <!-- Navigation (header) -->
+  <nav class="navbar navbar-inverse main-color">
+    <div class="container-fluid">
+      <div class="navbar-header">
 
-      <!-- Collapse button -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="textBlack navbar-brand" href="/">Audioguide Niouc</a> </div>
+        <!-- Collapse button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="textBlack navbar-brand" href="/">Audioguide du pont suspendu de Niouc</a>
+      </div>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="menu">
-      <!-- Links -->
-      <ul class="nav navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/activity">{% trans "Activités" %}</a></li>
-        <li class="nav-item"><a class="nav-link" href="/position">{% trans "Guide audio" %}</a></li>
-        <li class="nav-item"><a class="nav-link" href="/contact">{% trans "Contact" %}</a></li>
-        <!--<li class="nav-item"><a class="nav-link" href="">{% trans "Langue" %}</a></li>-->
-        <li class="nav-item"><a class="nav-link" href="/about">{% trans "A propos" %}</a></li>
-      </ul>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="menu">
+        <!-- Links -->
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/activity">{% trans "Activités" %}</a></li>
+          <li class="nav-item"><a class="nav-link" href="/position">{% trans "Guide audio" %}</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">{% trans "Contact" %}</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="">{% trans "Langue" %}</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="/about">{% trans "A propos" %}</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Page content -->
+  <div class="container bodyBG neg-mrg">
+    {% block content %}
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+      <!-- CONTENT -->
+    {% endblock %}
   </div>
-</nav>
 
-<!-- Page content -->
-<div class="container content neg-mrg">
-  {% block content %}
-    <!-- CONTENT -->
-    <!-- CONTENT -->
-    <!-- CONTENT -->
-    <!-- CONTENT -->
-  {% endblock %}
-</div>
+  <!-- Footer -->
+  <footer class="navbar navbar-fixed-bottom main-color top-buffer">
+    <div class="container" style="text-align: center;">
+      <!-- Internet -->
+      <a href="https://www.pontsuspendu.ch/" target="_blank"><i class="fas fa-2x fa-globe-europe icon-white"></i></a>&nbsp;&nbsp;
 
-<!-- Footer -->
-<footer class="page-footer main-color top-buffer">
-  <div class="container" style="text-align: center;">
-    <!-- Internet -->
-    <a href="https://www.pontsuspendu.ch/" target="_blank"><i class="fas fa-2x fa-globe-europe icon-white"></i></a>&nbsp;&nbsp;
-
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/pontsuspenduniouc" target="_blank"><i class="fab fa-2x fa-facebook icon-white top-buffer pad-btm"></i> </a> </div>
-
-  <!-- Copyright -->
-  <div class="text-center textDarkGray">© 2019 Copyright: HES-SO Valais-Wallis</div>
-</footer>
-</body>
-</html>
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/pontsuspenduniouc" target="_blank"><i class="fab fa-2x fa-facebook icon-white top-buffer pad-btm"></i> </a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center textDarkGray pad-btm">© 2019 Copyright: HES-SO Valais-Wallis</div>
+  </footer>
+  </body>
+  </html>
