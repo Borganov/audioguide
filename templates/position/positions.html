@@ -18,7 +18,7 @@
   <div class="col-md-2"> </div>
 </div>
 {% for positionItem in positionItems %}
-<div class="row top-buffer">
+<a href="{{positionItem.id}}"><div class="row top-buffer">
   <div class="col-md-2"> </div>
   <div class="col-md-8">
     <div class="panel panel-default panel-title panel-body">
@@ -29,6 +29,6 @@
       </div>
     </div>
   </div>
-</div>
+</div></a>
 {% endfor %}
 {% endblock %}

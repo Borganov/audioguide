@@ -45,7 +45,10 @@ class Detail(TemplateView):
 
         #Get indicator data
         id = kwargs.get('id')
-        positionItem = PositionItem.objects.get(id=id).__dict__
-        print(positionItem)
+        positionItem = PositionItem.objects.get(id=id)
+        position = Position.objects.get(id = positionItem.position_id).__dict__
+        positionItem = positionItem.__dict__
+        print(position)
 
-        return {'positionItem' : positionItem}
+
+        return {'positionItem' : positionItem, 'position' : position}
