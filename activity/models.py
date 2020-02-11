@@ -44,6 +44,7 @@ class Language(models.Model):
     abreviation = models.CharField(max_length=10, verbose_name="abreviation", default="fr")
     designation = models.CharField(max_length=15, verbose_name="Langue")
     img = models.ImageField(upload_to='static/img', default='static/img/default_image.jpg')
+    imgMouse = models.ImageField(upload_to='static/img', default='static/img/default_image.jpg')
     isActive = models.BooleanField(default=True)
     objects = models.Manager()
 

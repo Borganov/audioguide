@@ -18,10 +18,10 @@ class ActivityItemAdmin(admin.ModelAdmin):
 
 
 class LanguageAdmin(admin.ModelAdmin):
-    list_display = ('abreviation', 'designation', 'img', 'isActive',)
-    list_filter = ('abreviation', 'designation', 'img', 'isActive',)
-    search_fields = ('abreviation', 'designation', 'img', 'isActive',)
-    list_editable = ('designation', 'img', 'isActive',)
+    list_display = ('abreviation', 'designation', 'img', 'imgMouse', 'isActive',)
+    list_filter = ('abreviation', 'designation', 'img', 'imgMouse', 'isActive',)
+    search_fields = ('abreviation', 'designation', 'img','imgMouse',  'isActive',)
+    list_editable = ('designation', 'img', 'imgMouse', 'isActive',)
 
 
 admin.site.register(Activity, ActivityAdmin)

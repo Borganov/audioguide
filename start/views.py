@@ -10,8 +10,17 @@ from position.models import PositionItem
 
 def accueil(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    return render(request, 'pages/home_page.html')
+    languages = Language.objects.all()
+    context = {
+        'languages': languages,
+    }
+    return render(request, 'pages/home_page.html', context)
 
 def start(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    return render(request, 'pages/start.html')
+    languages = Language.objects.all()
+    context = {
+        'languages': languages,
+        'redirect_to' : "accueil"
+    }
+    return render(request, 'pages/start.html', context)
