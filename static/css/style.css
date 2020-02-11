@@ -135,3 +135,15 @@
 .navbar-hamburger {
   cursor: pointer;
 }
+
+/* Position_List Styles */
+.postition_title {
+  font-size: 4em;
+}
+
+.imagePositionList {
+  float: left;
+  padding-right: 10px;
+  max-width: 30%;
+  height: 100px;
+}

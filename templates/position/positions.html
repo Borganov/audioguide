@@ -10,11 +10,9 @@
   <div class="row top-buffer">
     <div class="col-md-2"> </div>
     <div class="col-md-8">
-      <p align="center">
-      <div class="jumbotron jt-contact">
-        <h1>{% trans "Points d'intérêts" %}</h1>
+      <div class="panel panel-default panel-title panel-body text-center">
+        <h1 class="postition_title">{% trans "Points d'intérêts" %}</h1>
       </div>
-      </p>
     </div>
     <div class="col-md-2"> </div>
   </div>
@@ -23,7 +21,7 @@
     <div class="col-md-2"> </div>
       <div class="col-md-8">
         <div class="panel panel-default panel-title panel-body">
-          <div> <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imageActivity" alt="imageText" />
+          <div> <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imagePositionList" alt="imageText" />
             <h2 class="h2ActivityList">{{positionItem.titre}}</h2>
             <br>
             <p>{{positionItem.description}}</p>
