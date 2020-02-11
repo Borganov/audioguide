@@ -1,7 +1,9 @@
+from pyexpat import model
+
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-from .models import Language, ActivityItem
+from .models import Language, ActivityItem, Activity
 
 
 def activity(request):
@@ -11,19 +13,6 @@ def activity(request):
         'activities': activities,
     }
     return render(request, 'activity/activities.html', context)
-
-def activityItem(request):
-    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-
-    #Traitement du formulaire
-    context = super().get_context_data(**kwargs)
-
-    #Get indicator data
-    id = kwargs.get('id')
-    activities = ActivityItem.objects.get(id=id).__dict__
-
-
-    return render(request, 'activity/activityItem.html', context)
 
 
 class Detail(TemplateView):
@@ -36,10 +25,13 @@ class Detail(TemplateView):
         #Traitement du formulaire
         context = super().get_context_data(**kwargs)
 
+
         #Get indicator data
         id = kwargs.get('id')
-        activityItem = ActivityItem.objects.get(id=id).__dict__
-        print(activityItem)
+        activityItem = ActivityItem.objects.get(id=id)
+        activity = Activity.objects.get(id=activityItem.activity_id).__dict__
+        print(activity)
+        activityItem = activityItem.__dict__
 
-        return {'activityItem' : activityItem}
+        return {'activityItem' : activityItem, 'activity':activity}
 

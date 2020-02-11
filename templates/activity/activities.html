@@ -9,10 +9,11 @@
 <!-- Custom fonts for this template-->
 <h1>{% trans "Activités" %}</h1><br>
 
-    {% for activity in activities %}
+{% for activity in activities %}
+ <h3>{{activity.activity.prestataire}}</h3>
     {% csrf_token %}
 
-        <a href="{{ baseUrl }}/{{activity.id}}">
+        <a href="{{activity.id}}">
 
         <div class="container-fluid">
             <div class="row top-buffer">
@@ -20,6 +21,7 @@
                 </div>
             </div>
             <div class="row top-buffer" style="text-align:justify">
+
                 <div class="col-md-12">
                     <h3>{{activity.description}}</h3>
                 </div>
@@ -32,7 +34,9 @@
         </div></a>
 
     <br> <br>
-    {% endfor %}
+
+{% endfor %}
+
 
 
     {% endblock %}

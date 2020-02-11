@@ -6,8 +6,7 @@
 
 {% block content %}
 <!-- Custom fonts for this template-->
-<link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
 <h1>{{activityItem.title}}</h1>
-<img src="{{ baseUrl }}/{{activityItem.activity.img}}"/>
+<img src="{{ baseUrl }}/{{activity.img}}"/>
 <h3>{{activityItem.description}}</h3>
 {% endblock %}
