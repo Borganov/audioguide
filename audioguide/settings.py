@@ -27,10 +27,11 @@ REPOSITORY_ROOT = os.path.dirname(BASE_DIR)
 SECRET_KEY = '14($t12@feq%n9g-p7lg+^24rk^i3gk$uo(ar!gb(ifl)fkwoo'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'pontsuspendu.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 
