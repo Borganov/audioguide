@@ -5,9 +5,6 @@ from position.models import Position, PositionItem
 from django.views.generic import  TemplateView
 
 
-def detail(request):
-    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    return render(request, 'position/detail.html')
 
 def positions(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
@@ -18,19 +15,6 @@ def positions(request):
     }
 
     return render(request, 'position/positions.html', context)
-
-def positionItem(request):
-    lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-
-    #Traitement du formulaire
-    context = super().get_context_data(**kwargs)
-
-    #Get indicator data
-    id = kwargs.get('id')
-    positions = PositionItem.objects.get(id=id).__dict__
-
-
-    return render(request, 'position/positionItem.html', context)
 
 
 class Detail(TemplateView):
