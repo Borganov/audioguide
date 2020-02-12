@@ -16,10 +16,6 @@
                 <div class="col-md-12 text-center"><img src="{% static 'imgStatic/Logo.png' %}" width="45%"/></div>
             </div>
 
-                  {% for language in languages %}
-
-               <a href="../{{language.abreviation}}/position/1">{{language.designation}}/</a>
-                 {% endfor %}
 
  <form action="{% url 'set_language' %}" method="post">
             {% for language in languages %}
@@ -28,16 +24,13 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <p align="center">
-
-
-                        <input name="language"  value="{{language.abreviation}}" type="submit" src="{{ baseUrl }}/{{language.img}}" width="400" height="86" src="{{ baseUrl}}/{{language.img}}" />
+                        <input name="language"  value="{{language.abreviation}}" type="submit"/>
                     </p>
                 </div>
                 <div class="col-md-2"></div>
             </div>
-
             {% endfor %}
-<input class="btn btn-primary" type="submit" value="{% trans 'Enregistrer mon choix' %}">
+     <p align="center"> <a href="position/1">GO </a></p>
     </form>
 
 </div>

@@ -8,7 +8,8 @@ from .models import Language, ActivityItem, Activity
 
 def activity(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    activities = ActivityItem.objects.filter(isActive=True, lang=lang.id).order_by('activity__number')
+    activities = ActivityItem.objects.filter(isActive=True, lang=lang.id).order_by('activity__number', 'order')
+
     context = {
         'activities': activities,
     }

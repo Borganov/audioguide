@@ -26,7 +26,7 @@ class Activity(models.Model):
 
 class ActivityItem(models.Model):
     lang = models.ForeignKey('activity.Language', on_delete=models.DO_NOTHING, default=1)
-    order = models.IntegerField(default=1)
+    order = models.FloatField(default=1)
     title = models.CharField(max_length=200)
     description = models.TextField(max_length=1000)
     objects = models.Manager()
@@ -34,7 +34,7 @@ class ActivityItem(models.Model):
     activity = models.ForeignKey('Activity', on_delete=models.CASCADE)
 
     def __str__(self):
-        return '{activityNumber} - {activityImg} - {description} - {order}'.format(activityNumber = self.activity.number, activityImg = self.activity.img, description = self.description, order = self.order)
+        return '{activityNumber} -  {description} - {activityImg} - {order}'.format(activityNumber = self.activity.number,  description = self.description, activityImg = self.activity.img, order = self.order)
 
     def __unicode__(self):
         return self.activity.title

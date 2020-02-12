@@ -4,14 +4,14 @@ from activity.models import Activity, Language, ActivityItem
 
 
 class ActivityAdmin(admin.ModelAdmin):
-    list_display = ('date', 'number', 'isActive', 'img',)
-    list_filter = ('number', 'isActive', 'date',)
-    search_fields = ('isActive', 'date',)
-    list_editable = ('isActive', 'number', 'img')
+    list_display = ('date', 'number','title', 'prestataire', 'img', 'isActive',  )
+    list_filter = ('number', 'isActive', 'date','title','prestataire',)
+    search_fields = ('isActive', 'date','title','prestataire',)
+    list_editable = ('isActive', 'number', 'img', 'title','prestataire',)
 
 
 class ActivityItemAdmin(admin.ModelAdmin):
-    list_display = ('lang', 'order', 'title', 'description', 'activity', 'isActive')
+    list_display = ('lang', 'activity', 'order', 'title', 'description',  'isActive')
     list_filter = ('title', 'order', 'description', 'activity', 'lang', 'isActive')
     search_fields = ('title', 'order', 'description', 'activity', 'lang', 'isActive')
     list_editable = ('title', 'order', 'description', 'activity', 'isActive')

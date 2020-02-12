@@ -1,12 +1,46 @@
-{% extends "base.html" %}
-
-{% load staticfiles %}
-
+{% extends "basePositions.html" %}
+{% load static %}
 {% static "" as baseUrl %}
-
+{% load i18n %}
 {% block content %}
+
 <!-- Custom fonts for this template-->
-<h1>{{activityItem.title}}</h1>
-<img src="{{ baseUrl }}/{{activity.img}}"/>
-<h3>{{activityItem.description}}</h3>
-{% endblock %}gi
+<link href="{% static 'onlyForActivity.css' %}" rel="stylesheet" type="text/css">
+
+<!-- Custom style for this page -->
+<style>
+.thumbnail {
+    width: 90%;
+    height: auto>;
+    overflow: auto;
+}
+
+.thumbnail img {
+    max-height: 30em;
+    max-width: 100%;
+    display: block;
+}
+
+.responsiveTitle {
+    font-size: 4.5rem;
+}
+
+.responsiveText {
+    font-size: 2rem;
+}
+
+audio {
+    width: 90%;
+}
+</style>
+
+<div class="container-fluid content-height" align="center">
+    <div class="thumbnail">
+        <img src="{{ baseUrl }}/{{activity.img}}" />
+        <div class="caption">
+            <h1 class="responsiveTitle">{{activityItem.title}}</h1>
+            <p class="responsiveText">{{activityItem.description}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
