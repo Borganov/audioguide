@@ -7,47 +7,48 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-md-10 col-md-offset-1" style="margin-bottom: 36px">
+        <div class="col-md-10 col-md-offset-1">
             <h1>{% trans "Contact" %}</h1>
-            <h3>{% trans "Vous avez une question à nous poser? Contactez-nous!" %}</h3>
+            <h3>{% trans "Vous avez une question à nous poser?" %}</h3>
+            <h3><a href="https://pontsuspendu.ch/contact/" target="_blank">{% trans "Contactez-nous!" %}</a></h3>
         </div>
     </div>
 
     <div class="row ">
         <div class="col-md-10 col-md-offset-1">
-            <div class="col-md-6 ">
+            {% comment %} <div class="col-md-6 ">
                 <form action="" method="post">
-                    <table>
                         {% csrf_token %}
                         {{ form.as_p }}
-                    </table>
                     <input class="btn btn-primary" type="submit" value='{% trans "ENVOYER" %}'>
                     <p></p>
                 </form>
-            </div>
-            <div class="col-md-5 col-md-offset-1 ">
-                <div class="panel" style="background-color: transparent">
-                    <div class="panel-header">
-                        <h3>{% trans "Adresse de l’association" %}</h3></div>
-                    <div class="panel-body">
-                        <p>
-                            <b>{% trans "Association des amis du pont suspendu de Niouc" %}</b><br/>
-                            {% trans "Rue des Longs-Prés 40" %}<br/>
-                            "CH-3960 Sierre<br/>
-                            +41 78 622 41 93
-                        </p>
+            </div>{% endcomment %}
+            <div class="row ">
+                <div class="col-md-5 col-md-offset-1 ">
+                    <div class="panel" style="background-color: transparent">
+                        <div class="panel-header">
+                            <h3>{% trans "Adresse de l’association" %}</h3></div>
+                        <div class="panel-body">
+                            <p>
+                                <b>{% trans "Association des amis du pont suspendu de Niouc" %}</b><br/>
+                                {% trans "Rue des Longs-Prés 40" %}<br/>
+                                CH-3960 Sierre<br/>
+                                +41 78 622 41 93
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="panel" style="background-color: transparent">
-                    <div class="panel-header">
-                        <h3>{% trans "Horaires d'ouverture" %}</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div style="margin-left:20px;">
+                <div class="col-md-5 col-md-offset-1 ">
+                    <div class="panel" style="background-color: transparent">
+                        <div class="panel-header">
+                            <h3>{% trans "Horaires d'ouverture" %}</h3>
+                        </div>
+                        <div class="panel-body">
                             <h4>{% trans "De début avril à fin octobre :" %}</h4>
-                            {% trans "uniquement les weekend, de 11h à 18h" %}
+                            <p style="margin-left: 20px">{% trans "uniquement les weekend, de 11h à 18h" %}</p>
                             <h4>{% trans "Du 18 juillet au 18 août :" %}</h4>
-                            {% trans "tous les jours sauf le lundi, de 11h à 18h" %}
+                            <p style="margin-left: 20px">{% trans "tous les jours sauf le lundi, de 11h à 18h" %}</p>
                         </div>
                     </div>
                 </div>
@@ -55,15 +56,14 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1 ">
+    <div class="row" style="margin-bottom: 36px">
+        <div class="col-md-10 col-md-offset-1">
             <h3>{% trans "Localisation du pont :" %}</h3>
-            <iframe src='https://map.geo.admin.ch/embed.html?lang=fr&topic=ech&bgLayer=ch.swisstopo.swissimage&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2609025&N=1123567&zoom=11&crosshair=marker'
-                    width='100%' height='500px' frameborder='0' style='border:0'></iframe>
-            {% comment %} <a href="https://www.google.ch/maps/place/Niouc-Brücke/@46.2631634,7.5546572,407m/data=!3m1!1e3!4m5!3m4!1s0x478f21fcf605c1df:0xd5bbea1fb1c58a73!8m2!3d46.2634543!4d7.5556071"
-               target="_blank">
-                <img src="images/Situation.png" width="100%"/>
-            </a>{% endcomment %}
+            {% comment %} <iframe src='https://map.geo.admin.ch/embed.html?lang=fr&topic=ech&bgLayer=ch.swisstopo.swissimage&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2609025&N=1123567&zoom=11&crosshair=marker'
+                    width='100%' height='500px' frameborder='0' style='border:0'></iframe>{% endcomment %}
+            <a href="https://s.geo.admin.ch/87604ea075" target="_blank">
+                <img src="../../static/img/PontNiouc_situation.png" width="100%"/>
+            </a>
         </div>
     </div>
 {% endblock %}

@@ -1,37 +1,21 @@
-    {% extends "basePositions.html" %}
-    {% load static %}
+{% extends "basePositions.html" %}
+{% load static %}
+{% static "" as baseUrl %}
+{% load i18n %}
 
-    {% static "" as baseUrl %}
+<!-- Content -->
+{% block content %}
+<div class="container" align="center">
+    <img src="{% static 'imgStatic/Logo.png' %}">
+</div>
 
-
-    {% load i18n %}
-    {% block content %}
-    <div class="container-fluid content-height">
-    <div class="row top-buffer">
-      <div class="col-md-2"> </div>
-      <div class="col-md-8">
-        <h1 class="postition_title">{% trans "Points d'intérêts" %}</h1>
-      </div>
-      <div class="col-md-2"> </div>
-    </div>
+<table id="tablePositions">
     {% for positionItem in positionItems %}
-    <a href="{{positionItem.id}}"><div class="row top-buffer">
-        <div class="col-md-8 col-offset-md-2 col-sm-12 align-middle panel panel-default">
-
-            <div class="row">
-              <div class="col-sm-3">
-                <img src="{{ baseUrl }}/{{positionItem.position.img}}" class="imagePositionList" alt="imageText" />
-              </div>
-              <div class="col-sm-9">
-                <h2 class="h2ActivityList">{{positionItem.titre}}</h2>
-                <br>
-                <p>{{positionItem.description}}</p>
-              </div>
-            </div>
-
-        </div>
-      </div>
-    </a>
+        <tr id="rowPositions">
+            <td id="cellPositions">
+                <a id="linkPositions" href="{{positionItem.id}}">{{positionItem.id}} {{positionItem.titre}}</a>
+            </td>
+        </tr>
     {% endfor %}
-      </div>
-    {% endblock %}
+</table>
+{% endblock %}
