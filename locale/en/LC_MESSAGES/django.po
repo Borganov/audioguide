@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-11 18:58+0100\n"
+"POT-Creation-Date: 2020-02-12 08:39+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,7 +170,7 @@ msgstr "Bridge coordinates - Google Map :"
 msgid "Coordonnées GPS :"
 msgstr "GPS coordinates :"
 
-#: .\templates\pages\start.html:10
+#: .\templates\pages\start.html:11
 msgid "Bienvenue sur le guide audio"
 msgstr "Welcome to the audio guide"
 
