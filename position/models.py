@@ -11,7 +11,7 @@ def image_upload_path(instance, filename):
 
 # Create your models here.
 class Position(models.Model):
-    order = models.IntegerField()
+    order = models.FloatField()
     name = models.CharField(max_length=100)
     objects = models.Manager()
     isActive = models.BooleanField(default=True)
@@ -22,6 +22,7 @@ class Position(models.Model):
 
     def __unicode__(self):
         return self.name
+
 
 class PositionItem(models.Model):
     titre = models.CharField(max_length=100)
