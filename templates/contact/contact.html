@@ -8,8 +8,8 @@
 {% block content %}
     <div class="row">
         <div class="col-md-10 col-md-offset-1" style="margin-bottom: 36px">
-            <h1>Contact</h1>
-            <h3>Vous avez une question à nous poser? Contactez-nous!</h3>
+            <h1>{% trans "Contact" %}</h1>
+            <h3>{% trans "Vous avez une question à nous poser? Contactez-nous!" %}</h3>
         </div>
     </div>
 
@@ -28,26 +28,26 @@
             <div class="col-md-5 col-md-offset-1 ">
                 <div class="panel" style="background-color: transparent">
                     <div class="panel-header">
-                        <h3>Adresse de l’association</h3></div>
+                        <h3>{% trans "Adresse de l’association" %}</h3></div>
                     <div class="panel-body">
                         <p>
-                            <b>Association des amis du pont suspendu de Niouc</b><br/>
-                            Rue des Longs-Prés 40<br/>
-                            CH-3960 Sierre<br/>
+                            <b>{% trans "Association des amis du pont suspendu de Niouc" %}</b><br/>
+                            {% trans "Rue des Longs-Prés 40" %}<br/>
+                            "CH-3960 Sierre<br/>
                             +41 78 622 41 93
                         </p>
                     </div>
                 </div>
                 <div class="panel" style="background-color: transparent">
                     <div class="panel-header">
-                        <h3>Horaires d'ouverture</h3>
+                        <h3>{% trans "Horaires d'ouverture" %}</h3>
                     </div>
                     <div class="panel-body">
                         <div style="margin-left:20px;">
-                            <h4>De début avril à fin octobre :</h4>
-                            uniquement les weekend, de 11h à 18h
-                            <h4>Du 18 juillet au 18 août :</h4>
-                            tous les jours sauf le lundi, de 11h à 18h
+                            <h4>{% trans "De début avril à fin octobre :" %}</h4>
+                            {% trans "uniquement les weekend, de 11h à 18h" %}
+                            <h4>{% trans "Du 18 juillet au 18 août :" %}</h4>
+                            {% trans "tous les jours sauf le lundi, de 11h à 18h" %}
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
 
     <div class="row">
         <div class="col-md-10 col-md-offset-1 ">
-            <h3>Localisation du pont :</h3>
+            <h3>{% trans "Localisation du pont :" %}</h3>
             <iframe src='https://map.geo.admin.ch/embed.html?lang=fr&topic=ech&bgLayer=ch.swisstopo.swissimage&layers=ch.swisstopo.zeitreihen,ch.bfs.gebaeude_wohnungs_register,ch.bav.haltestellen-oev,ch.swisstopo.swisstlm3d-wanderwege&layers_visibility=false,false,false,false&layers_timestamp=18641231,,,&E=2609025&N=1123567&zoom=11&crosshair=marker'
                     width='100%' height='500px' frameborder='0' style='border:0'></iframe>
             {% comment %} <a href="https://www.google.ch/maps/place/Niouc-Brücke/@46.2631634,7.5546572,407m/data=!3m1!1e3!4m5!3m4!1s0x478f21fcf605c1df:0xd5bbea1fb1c58a73!8m2!3d46.2634543!4d7.5556071"

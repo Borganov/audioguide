@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-12 08:53+0100\n"
+"POT-Creation-Date: 2020-02-12 11:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,8 @@ msgid "Guide audio"
 msgstr "Audio Guide"
 
 #: .\templates\base.html:35 .\templates\baseOLD.html:36
-#: .\templates\contact\contact_old.html:13 .\templates\pages\home_page.html:37
+#: .\templates\contact\contact.html:11 .\templates\contact\contact_old.html:13
+#: .\templates\pages\home_page.html:37
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -75,9 +76,49 @@ msgstr "Über uns"
 msgid "Accès"
 msgstr "Zugang"
 
+#: .\templates\contact\contact.html:12
+msgid "Vous avez une question à nous poser? Contactez-nous!"
+msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
+
 #: .\templates\contact\contact.html:24 .\templates\contact\contact_old.html:22
 msgid "ENVOYER"
 msgstr "SENDEN"
+
+#: .\templates\contact\contact.html:31
+msgid "Adresse de l’association"
+msgstr "Postadresse des Vereins :"
+
+#: .\templates\contact\contact.html:34
+msgid "Association des amis du pont suspendu de Niouc"
+msgstr ""
+
+#: .\templates\contact\contact.html:35
+msgid "Rue des Longs-Prés 40"
+msgstr ""
+
+#: .\templates\contact\contact.html:43
+msgid "Horaires d'ouverture"
+msgstr "Öffnungszeiten"
+
+#: .\templates\contact\contact.html:47
+msgid "De début avril à fin octobre :"
+msgstr "Von Anfang April bis Ende Oktober :"
+
+#: .\templates\contact\contact.html:48
+msgid "uniquement les weekend, de 11h à 18h"
+msgstr "nur am Wochenende von 11 bis 18 Uhr"
+
+#: .\templates\contact\contact.html:49
+msgid "Du 18 juillet au 18 août :"
+msgstr "Vom 18. Juli bis 18. August:"
+
+#: .\templates\contact\contact.html:50
+msgid "tous les jours sauf le lundi, de 11h à 18h"
+msgstr "jeden Tag ausser montags, von 11h bis 18h"
+
+#: .\templates\contact\contact.html:60
+msgid "Localisation du pont :"
+msgstr "Standortdaten der Brücke :"
 
 #: .\templates\contact\contact_old.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
@@ -109,7 +150,7 @@ msgstr "Aktuelle Sprache :"
 msgid "Changer de langue"
 msgstr "Sprache ändern"
 
-#: .\templates\language\language.html:36
+#: .\templates\language\language.html:36 .\templates\pages\start.html:40
 msgid "Enregistrer mon choix"
 msgstr "Speichern"
 
@@ -142,15 +183,19 @@ msgstr ""
 
 #: .\templates\location\location.html:17
 msgid "Le pont est ouvert au public :"
-msgstr "Die Brücke ist für die Öffentlichkeit verfügbar :"
+msgstr ""
 
 #: .\templates\location\location.html:18
+#, fuzzy
+#| msgid "De début avril à fin octobre :"
 msgid "De début avril à fin octobre,"
-msgstr "Von Anfang April bis Ende Oktober"
+msgstr "Von Anfang April bis Ende Oktober :"
 
 #: .\templates\location\location.html:19
+#, fuzzy
+#| msgid "uniquement les weekend, de 11h à 18h"
 msgid "uniquement les weekend,"
-msgstr "nur an den Wochenenden"
+msgstr "nur am Wochenende von 11 bis 18 Uhr"
 
 #: .\templates\location\location.html:20 .\templates\location\location.html:25
 msgid "de 11h à 18h"
@@ -161,6 +206,8 @@ msgid "Du 18 juillet au 18 août,"
 msgstr ""
 
 #: .\templates\location\location.html:24
+#, fuzzy
+#| msgid "tous les jours sauf le lundi,"
 msgid "tous les jours sauf le lundi,"
 msgstr "jeden Tag außer montags,"
 
@@ -1355,6 +1402,14 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "uniquement les weekend,"
+#~ msgid "uniquement les weekend, de 11h à 18h "
+#~ msgstr "nur an den Wochenenden"
+
+#~ msgid "tous les jours sauf le lundi, de 11h à 18h "
+#~ msgstr "täglich außer montags von 11 bis 18 Uhr"
 
 #, fuzzy
 #~| msgid "Titre"

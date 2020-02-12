@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-12 08:39+0100\n"
+"POT-Creation-Date: 2020-02-12 11:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,8 @@ msgid "Guide audio"
 msgstr "Audio guide"
 
 #: .\templates\base.html:35 .\templates\baseOLD.html:36
-#: .\templates\contact\contact_old.html:13 .\templates\pages\home_page.html:37
+#: .\templates\contact\contact.html:11 .\templates\contact\contact_old.html:13
+#: .\templates\pages\home_page.html:37
 msgid "Contact"
 msgstr "Contact"
 
@@ -75,9 +76,49 @@ msgstr "About"
 msgid "Accès"
 msgstr "Access"
 
+#: .\templates\contact\contact.html:12
+msgid "Vous avez une question à nous poser? Contactez-nous!"
+msgstr "Do you have any question? Feel free to contact us!"
+
 #: .\templates\contact\contact.html:24 .\templates\contact\contact_old.html:22
 msgid "ENVOYER"
 msgstr "SEND"
+
+#: .\templates\contact\contact.html:31
+msgid "Adresse de l’association"
+msgstr "Postal address of the association"
+
+#: .\templates\contact\contact.html:34
+msgid "Association des amis du pont suspendu de Niouc"
+msgstr ""
+
+#: .\templates\contact\contact.html:35
+msgid "Rue des Longs-Prés 40"
+msgstr ""
+
+#: .\templates\contact\contact.html:43
+msgid "Horaires d'ouverture"
+msgstr "Opening hours"
+
+#: .\templates\contact\contact.html:47
+msgid "De début avril à fin octobre :"
+msgstr "From early April to late October,"
+
+#: .\templates\contact\contact.html:48
+msgid "uniquement les weekend, de 11h à 18h"
+msgstr "only weekends, between 11am to 6pm"
+
+#: .\templates\contact\contact.html:49
+msgid "Du 18 juillet au 18 août :"
+msgstr "From July 18 to August 18 :"
+
+#: .\templates\contact\contact.html:50
+msgid "tous les jours sauf le lundi, de 11h à 18h"
+msgstr "every day except Monday, between 11am to 6pm"
+
+#: .\templates\contact\contact.html:60
+msgid "Localisation du pont :"
+msgstr "Localization of the bridge :"
 
 #: .\templates\contact\contact_old.html:14
 msgid "Vous avez une question à nous poser? Contactez nous!"
@@ -108,13 +149,13 @@ msgstr "Current language :"
 msgid "Changer de langue"
 msgstr "Change language"
 
-#: .\templates\language\language.html:36
+#: .\templates\language\language.html:36 .\templates\pages\start.html:40
 msgid "Enregistrer mon choix"
 msgstr "Save"
 
 #: .\templates\location\location.html:10
 msgid "Localisation et horaires"
-msgstr "Location and opening hours"
+msgstr "contact and opening hours"
 
 #: .\templates\location\location.html:11
 msgid ""
@@ -170,7 +211,7 @@ msgstr "Bridge coordinates - Google Map :"
 msgid "Coordonnées GPS :"
 msgstr "GPS coordinates :"
 
-#: .\templates\pages\start.html:11
+#: .\templates\pages\start.html:12
 msgid "Bienvenue sur le guide audio"
 msgstr "Welcome to the audio guide"
 
