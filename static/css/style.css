@@ -173,3 +173,27 @@ a :hover{
 .contactForm_field {
   width: 100%;
 }
+
+/* positions.html */
+#tablePositions {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(99, 99, 99);
+}
+
+#rowPositions:nth-child(even) {
+    background-color: #939393;
+}
+
+#cellPositions {
+    border: 3px solid #000000;
+    text-align: left;
+    padding: 30px;
+}
+
+#linkPositions {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    font-family: "Times New Roman";
+}
