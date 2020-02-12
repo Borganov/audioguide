@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 14:32+0100\n"
+"POT-Creation-Date: 2020-02-11 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\audioguide\settings.py:115
+#: .\audioguide\settings.py:118
 msgid "Français"
 msgstr "French"
 
-#: .\audioguide\settings.py:116
+#: .\audioguide\settings.py:119
 msgid "English"
 msgstr "English"
 
-#: .\audioguide\settings.py:117
+#: .\audioguide\settings.py:120
 msgid "Deutsch"
 msgstr "German"
 
-#: .\audioguide\urls.py:26
+#: .\audioguide\urls.py:27
 msgid "admin/"
 msgstr "admin/"
 
@@ -46,47 +46,44 @@ msgstr "Authors"
 msgid "Version"
 msgstr "Version"
 
-#: .\templates\activity\activities.html:10 .\templates\base.html:30
-#: .\templates\pages\home_page.html:32
+#: .\templates\activity\activities.html:10 .\templates\base.html:33
+#: .\templates\baseOLD.html:30 .\templates\pages\home_page.html:32
 msgid "Activités"
 msgstr "Activities"
 
-#: .\templates\activity\detail.html:11
-#, fuzzy
-#| msgid "Titre"
-msgid "Titre :"
-msgstr "Title"
-
-#: .\templates\base.html:33 .\templates\pages\home_page.html:27
+#: .\templates\base.html:34 .\templates\baseOLD.html:33
+#: .\templates\pages\home_page.html:27
 msgid "Guide audio"
 msgstr "Audio guide"
 
-#: .\templates\base.html:36 .\templates\contact\contact.html:13
-#: .\templates\pages\home_page.html:37
+#: .\templates\base.html:35 .\templates\baseOLD.html:36
+#: .\templates\contact\contact_old.html:13 .\templates\pages\home_page.html:37
 msgid "Contact"
 msgstr "Contact"
 
-#: .\templates\base.html:39 .\templates\pages\home_page.html:42
-msgid "Accès"
-msgstr "Access"
-
-#: .\templates\base.html:42 .\templates\pages\home_page.html:20
+#: .\templates\base.html:36 .\templates\baseOLD.html:42
+#: .\templates\pages\home_page.html:20
 msgid "Langue"
 msgstr "Language"
 
-#: .\templates\base.html:45 .\templates\pages\home_page.html:47
+#: .\templates\base.html:37 .\templates\baseOLD.html:45
+#: .\templates\pages\home_page.html:47
 msgid "A propos"
 msgstr "About"
 
-#: .\templates\contact\contact.html:14
-msgid "Vous avez une question à nous poser? Contactez nous!"
-msgstr "Do you have any question? Feel free to contact us!"
+#: .\templates\baseOLD.html:39 .\templates\pages\home_page.html:42
+msgid "Accès"
+msgstr "Access"
 
-#: .\templates\contact\contact.html:22
+#: .\templates\contact\contact.html:24 .\templates\contact\contact_old.html:22
 msgid "ENVOYER"
 msgstr "SEND"
 
-#: .\templates\contact\contact.html:24
+#: .\templates\contact\contact_old.html:14
+msgid "Vous avez une question à nous poser? Contactez nous!"
+msgstr "Do you have any question? Feel free to contact us!"
+
+#: .\templates\contact\contact_old.html:24
 msgid "Adresse administrative de l’association :"
 msgstr "Postal address of the association :"
 
@@ -103,19 +100,15 @@ msgstr ""
 "Donations are possible by using the payment slip below to support our "
 "association and develop new activities related to our suspension bridge :"
 
-#: .\templates\language\language.html:14
-msgid "Choix de la langue"
-msgstr "Choice of the language"
-
-#: .\templates\language\language.html:16
+#: .\templates\language\language.html:15
 msgid "Langue actuelle :"
 msgstr "Current language :"
 
-#: .\templates\language\language.html:17
+#: .\templates\language\language.html:16
 msgid "Changer de langue"
 msgstr "Change language"
 
-#: .\templates\language\language.html:38
+#: .\templates\language\language.html:36
 msgid "Enregistrer mon choix"
 msgstr "Save"
 
@@ -132,8 +125,8 @@ msgid ""
 "par une petite route forestière."
 msgstr ""
 "The suspension bridge of Niouc is located near Sierre, in Valais "
-"(Switzerland). To get there by car, take the highway exit Sierre-Est, then at the "
-"roundabout, it's direction of Val d´Anniviers. After the village of "
+"(Switzerland). To get there by car, take the highway exit Sierre-Est, then "
+"at the roundabout, it's direction of Val d´Anniviers. After the village of "
 "Niouc, pay attention to the signs, the access to the bridge is located in a "
 "curve, by a small forest road."
 
@@ -177,15 +170,12 @@ msgstr "Bridge coordinates - Google Map :"
 msgid "Coordonnées GPS :"
 msgstr "GPS coordinates :"
 
-#: .\templates\pages\start.html:9
+#: .\templates\pages\start.html:10
 msgid "Bienvenue sur le guide audio"
 msgstr "Welcome to the audio guide"
 
-#: .\templates\position\positionItem.html:31
-msgid "Menu"
-msgstr ""
-
-#: .\templates\position\positions.html:10
+#: .\templates\position\positions.html:13
+#: .\templates\position\positionsOLD.html:10
 msgid "Points d'intérêts"
 msgstr "Posts"
 
@@ -1363,6 +1353,14 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Titre"
+#~ msgid "Titre :"
+#~ msgstr "Title"
+
+#~ msgid "Choix de la langue"
+#~ msgstr "Choice of the language"
 
 #, fuzzy
 #~| msgid "Description"

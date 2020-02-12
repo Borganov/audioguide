@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-08 14:31+0100\n"
+"POT-Creation-Date: 2020-02-11 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\audioguide\settings.py:115
+#: .\audioguide\settings.py:118
 msgid "Français"
 msgstr "Französisch"
 
-#: .\audioguide\settings.py:116
+#: .\audioguide\settings.py:119
 msgid "English"
 msgstr "Englisch"
 
-#: .\audioguide\settings.py:117
+#: .\audioguide\settings.py:120
 msgid "Deutsch"
 msgstr "Deutsch"
 
-#: .\audioguide\urls.py:26
+#: .\audioguide\urls.py:27
 msgid "admin/"
 msgstr "admin/"
 
@@ -46,47 +46,44 @@ msgstr "Autoren"
 msgid "Version"
 msgstr "Version"
 
-#: .\templates\activity\activities.html:10 .\templates\base.html:30
-#: .\templates\pages\home_page.html:32
+#: .\templates\activity\activities.html:10 .\templates\base.html:33
+#: .\templates\baseOLD.html:30 .\templates\pages\home_page.html:32
 msgid "Activités"
 msgstr "Aktivitäten"
 
-#: .\templates\activity\detail.html:11
-#, fuzzy
-#| msgid "Titre"
-msgid "Titre :"
-msgstr "Titel :"
-
-#: .\templates\base.html:33 .\templates\pages\home_page.html:27
+#: .\templates\base.html:34 .\templates\baseOLD.html:33
+#: .\templates\pages\home_page.html:27
 msgid "Guide audio"
 msgstr "Audio Guide"
 
-#: .\templates\base.html:36 .\templates\contact\contact.html:13
-#: .\templates\pages\home_page.html:37
+#: .\templates\base.html:35 .\templates\baseOLD.html:36
+#: .\templates\contact\contact_old.html:13 .\templates\pages\home_page.html:37
 msgid "Contact"
 msgstr "Kontakt"
 
-#: .\templates\base.html:39 .\templates\pages\home_page.html:42
-msgid "Accès"
-msgstr "Zugang"
-
-#: .\templates\base.html:42 .\templates\pages\home_page.html:20
+#: .\templates\base.html:36 .\templates\baseOLD.html:42
+#: .\templates\pages\home_page.html:20
 msgid "Langue"
 msgstr "Sprache"
 
-#: .\templates\base.html:45 .\templates\pages\home_page.html:47
+#: .\templates\base.html:37 .\templates\baseOLD.html:45
+#: .\templates\pages\home_page.html:47
 msgid "A propos"
 msgstr "Über uns"
 
-#: .\templates\contact\contact.html:14
-msgid "Vous avez une question à nous poser? Contactez nous!"
-msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
+#: .\templates\baseOLD.html:39 .\templates\pages\home_page.html:42
+msgid "Accès"
+msgstr "Zugang"
 
-#: .\templates\contact\contact.html:22
+#: .\templates\contact\contact.html:24 .\templates\contact\contact_old.html:22
 msgid "ENVOYER"
 msgstr "SENDEN"
 
-#: .\templates\contact\contact.html:24
+#: .\templates\contact\contact_old.html:14
+msgid "Vous avez une question à nous poser? Contactez nous!"
+msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
+
+#: .\templates\contact\contact_old.html:24
 msgid "Adresse administrative de l’association :"
 msgstr "Postadresse des Vereins :"
 
@@ -104,19 +101,15 @@ msgstr ""
 "Unterstützung unseres Vereins und zur Entwicklung neuer Aktivitäten im "
 "Zusammenhang mit unserer Hängebrücke leisten:"
 
-#: .\templates\language\language.html:14
-msgid "Choix de la langue"
-msgstr "Sprache wählen"
-
-#: .\templates\language\language.html:16
+#: .\templates\language\language.html:15
 msgid "Langue actuelle :"
 msgstr "Aktuelle Sprache :"
 
-#: .\templates\language\language.html:17
+#: .\templates\language\language.html:16
 msgid "Changer de langue"
 msgstr "Sprache ändern"
 
-#: .\templates\language\language.html:38
+#: .\templates\language\language.html:36
 msgid "Enregistrer mon choix"
 msgstr "Speichern"
 
@@ -132,11 +125,11 @@ msgid ""
 "soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
 "par une petite route forestière."
 msgstr ""
-"Die Hängebrücke von Niouc liegt unweit von Sierre im Wallis (Schweiz). Um mit "
-"dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, dann "
-"den Kreisverkehr und fahren zum Val d'Anniviers. Nach dem Dorf Niouc "
-"achten Sie auf die Beschilderung, der Zugang zur Brücke liegt in einer "
-"Kurve und kann über eine kleine Forststraße erreicht werden."
+"Die Hängebrücke von Niouc liegt unweit von Sierre im Wallis (Schweiz). Um "
+"mit dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, dann "
+"den Kreisverkehr und fahren zum Val d'Anniviers. Nach dem Dorf Niouc achten "
+"Sie auf die Beschilderung, der Zugang zur Brücke liegt in einer Kurve und "
+"kann über eine kleine Forststraße erreicht werden."
 
 #: .\templates\location\location.html:16
 msgid ""
@@ -179,15 +172,12 @@ msgstr "Brückenkoordinaten - Google Map:"
 msgid "Coordonnées GPS :"
 msgstr "GPS-Koordinaten:"
 
-#: .\templates\pages\start.html:9
+#: .\templates\pages\start.html:10
 msgid "Bienvenue sur le guide audio"
 msgstr "Herzlich willkommen im Audio Guide"
 
-#: .\templates\position\positionItem.html:31
-msgid "Menu"
-msgstr "Menu"
-
-#: .\templates\position\positions.html:10
+#: .\templates\position\positions.html:13
+#: .\templates\position\positionsOLD.html:10
 msgid "Points d'intérêts"
 msgstr "Posten"
 
@@ -1365,6 +1355,17 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:408
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Titre"
+#~ msgid "Titre :"
+#~ msgstr "Titel :"
+
+#~ msgid "Choix de la langue"
+#~ msgstr "Sprache wählen"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
 
 #, fuzzy
 #~| msgid "Description"
