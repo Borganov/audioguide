@@ -3,6 +3,12 @@ body{
   color: #fff;
   font-size: 16px;
 }
+a {
+  color: mediumblue;
+}
+a :hover{
+  color: darkblue;
+}
 .bodyBG {
   background: #C7342D;
 }
@@ -115,7 +121,7 @@ body{
   border-radius: 8px;
   text-decoration: none;
 }
-.btn {
+/*.btn {
   position: relative;
   width: 200px;
   height: 60px;
@@ -125,7 +131,7 @@ body{
   font-size: 16px;
   color: #333;
   background: gray;
-}
+}*/
 .btnStart {
   position: relative;
   height: 100px;
