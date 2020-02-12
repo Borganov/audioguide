@@ -41,3 +41,28 @@ def start(request):
         'languages': languages,
     }
     return render(request, 'pages/start.html', context)
+
+def set_lang(request):
+    next = request.POST.get('next', request.GET.get('next'))
+    if ((next or not request.is_ajax()) and
+            not is_safe_url(url=next, allowed_hosts={request.get_host()}, require_https=request.is_secure())):
+        next = request.META.get('HTTP_REFERER')
+        next = next and unquote(next)  # HTTP_REFERER may be encoded.
+        if not is_safe_url(url=next, allowed_hosts={request.get_host()}, require_https=request.is_secure()):
+            next = '/'
+    response = HttpResponseRedirect(next) if next else HttpResponse(status=204)
+    if request.method == 'POST':
+        lang_code = request.POST.get(LANGUAGE_QUERY_PARAMETER)
+        if lang_code and check_for_language(lang_code):
+            if next:
+                next_trans = translate_url(next, lang_code)
+                response = HttpResponseRedirect(next_trans+"position/1")
+            if hasattr(request, 'session'):
+                request.session[LANGUAGE_SESSION_KEY] = lang_code
+            response.set_cookie(
+                settings.LANGUAGE_COOKIE_NAME, lang_code,
+                max_age=settings.LANGUAGE_COOKIE_AGE,
+                path=settings.LANGUAGE_COOKIE_PATH,
+                domain=settings.LANGUAGE_COOKIE_DOMAIN,
+            )
+    return response

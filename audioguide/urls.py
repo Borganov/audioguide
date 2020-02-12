@@ -32,5 +32,6 @@ urlpatterns += i18n_patterns(
     path('don/', include('don.urls')),
     path('location/', include('location.urls')),
     path('position/', include('position.urls')),
+    path('set_lang/', include('start.urls')),
     path('', include('start.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
