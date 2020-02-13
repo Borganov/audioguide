@@ -8,10 +8,9 @@ from django.views.generic import  TemplateView
 
 def positions(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    positions = PositionItem.objects.filter(position__isActive=True, lang=lang.id).order_by('position__order')
-    print(positions)
+    positionItems = PositionItem.objects.filter(position__isActive=True, lang=lang.id).order_by('position__order')
     context = {
-        'positionItems': positions,
+        'positionItems': positionItems,
     }
 
     return render(request, 'position/positions.html', context)
@@ -28,11 +27,14 @@ class Detail(TemplateView):
         context = super().get_context_data(**kwargs)
 
         #Get indicator data
-        id = kwargs.get('id')
-        positionItem = PositionItem.objects.get(id=id)
-        position = Position.objects.get(id = positionItem.position_id).__dict__
-        positionItem = positionItem.__dict__
-        print(position)
+        idPosition = kwargs.get('id')
+        positionItem = PositionItem.objects.filter(position__id=idPosition, lang=lang.id)
+        position = Position.objects.get(id = idPosition)
+
+        context = {
+            'positionItem': positionItem[0],
+            'position' : position.__dict__
+            }
 
 
-        return {'positionItem' : positionItem, 'position' : position}
+        return context
