@@ -1,43 +1,44 @@
 {% extends "base.html" %}
-
 {% load static %}
-
-{#{% static "" as baseUrl %}#}
+{% static "" as baseUrl %}
 {% load i18n %}
 
 {% block content %}
-
-<div class="container-fluid content-height">
-    <div class="row top-buffer">
-      <div class="col-md-2"> </div>
-      <div class="col-md-8">
-        <h1 class="postition_title">{% trans "Activités" %}</h1>
-      </div>
-      <div class="col-md-2"> </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 class="postition_title">{% trans "Activités" %}</h1>
+        </div>
     </div>
-    {% for activity in activities %}
-    <h3>{{activity.activity.prestataire}}</h3>
-    <a href="{{activity.id}}"><div class="row top-buffer">
-        <div class="col-md-8 col-offset-md-2 col-sm-12 align-middle panel panel-default">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            {% regroup activityItems by activity.prestataire as grouped %}
+            {% for group in grouped %}
 
-            <div class="row">
-              <div class="col-sm-3">
-                <img src="{{ baseUrl }}/{{activity.activity.img}}" class="imagePositionList" alt="imageText" />
-              </div>
-              <div class="col-sm-9">
-                <h2 class="h2ActivityList">{{activity.name}}</h2>
-                <br>
-                <p>{{activity.description}}</p>
-              </div>
-            </div>
+                <h3>{{ group.grouper|upper }}</h3>
+                {% for activity in group.list %}
+                    <a href="{{ activity.id }}">
+                        <div class="row">
+                            <div class="panel panel-default activity-panel" style="">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <img src="{{ baseUrl }}/{{ activity.activity.img }}" style="width:100%"/>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h2 class="h2ActivityList">{{ activity.title }}</h2>
+                                        <p>{{ activity.description|truncatechars_html:300 }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            {% endfor %}
 
         </div>
-      </div>
-    </a>
-    {% endfor %}
-      </div>
+    </div>
 
 
 
 
-    {% endblock %}
+
+{% endblock %}

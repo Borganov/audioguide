@@ -18,11 +18,10 @@ class Activity(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return '{number} - {title}'.format(number= self.number, title=self.title)
+        return '{number} - {title} - {prestataire}'.format(number= self.number, title=self.title, prestataire=self.prestataire)
 
     def __unicode__(self):
         return self.title
-
 
 class ActivityItem(models.Model):
     lang = models.ForeignKey('activity.Language', on_delete=models.DO_NOTHING, default=1)
@@ -34,7 +33,7 @@ class ActivityItem(models.Model):
     activity = models.ForeignKey('Activity', on_delete=models.CASCADE)
 
     def __str__(self):
-        return '{activityNumber} -  {description} - {activityImg} - {order}'.format(activityNumber = self.activity.number,  description = self.description, activityImg = self.activity.img, order = self.order)
+        return '{activityNumber} -  {description} - {activityImg} - {order} - {prestataire}'.format(activityNumber = self.activity.number,  description = self.description, activityImg = self.activity.img, order = self.order, prestataire=self.activity.prestataire)
 
     def __unicode__(self):
         return self.activity.title
