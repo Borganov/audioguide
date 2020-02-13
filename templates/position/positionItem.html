@@ -23,14 +23,19 @@
 <div class="container" style="background-color: black; height: 75px;">
     <div class="row" style="padding-bottom: 20px; padding-top: 20px">
         <div class="col-xs-4" align="center">
-            <a href=""><i class="fas fa-2x fa-arrow-left icon-white"></i></a>
+          {% if hasPrevious %}
+            <a href="{{previousId}}"><i class="fas fa-2x fa-arrow-left icon-white"></i></a>
+          {% endif %}
         </div>
         <div class="col-xs-4" align="center">
             <a href="/"><i class="fas fa-2x fa-home icon-white"></i></a>
             <a href="/position"><i class="fas fa-2x fa-list-ol icon-white"></i></a>
         </div>
         <div class="col-xs-4" align="center">
-            <a href=""><i class="fas fa-2x fa-arrow-right icon-white"></i></a>
+          {% if hasNext %}
+            <a href="{{nextId}}"><i class="fas fa-2x fa-arrow-right icon-white"></i></a>
+          {% endif %}
+
         </div>
     </div>
 </div>
