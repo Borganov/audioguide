@@ -20,22 +20,21 @@
 </div>
 
 <!-- Navigation -->
-<div class="container" style="background-color: black; height: 75px;">
+<div class="container" style="background-color: #f6d7d6; height: 60px;">
     <div class="row" style="padding-bottom: 20px; padding-top: 20px">
         <div class="col-xs-4" align="center">
           {% if hasPrevious %}
-            <a href="{{previousId}}"><i class="fas fa-2x fa-arrow-left icon-white"></i></a>
+            <a href="{{previousId}}"><i class="fas fa-arrow-left" style="color: #9d282a; font-size: 24px"></i></a>
           {% endif %}
         </div>
         <div class="col-xs-4" align="center">
-            <a href="/"><i class="fas fa-2x fa-home icon-white"></i></a>
-            <a href="/position"><i class="fas fa-2x fa-list-ol icon-white"></i></a>
+            <a href="/"><i class="fas fa-home" style="color: #9d282a; font-size: 24px"></i></a>
+            <a href="/position"><i class="fas fa-list-ol" style="color: #9d282a; font-size: 24px"></i></a>
         </div>
         <div class="col-xs-4" align="center">
           {% if hasNext %}
-            <a href="{{nextId}}"><i class="fas fa-2x fa-arrow-right icon-white"></i></a>
+            <a href="{{nextId}}"><i class="fas fa-arrow-right" style="color: #9d282a; font-size: 24px"></i></a>
           {% endif %}
-
         </div>
     </div>
 </div>
