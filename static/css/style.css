@@ -51,7 +51,6 @@ a :hover{
 .content-height {
   min-height: calc(100%-40px);
 }
-
 /* Padding, margin Styles */
 .neg-mrg {
   margin-top: -20px;
@@ -180,22 +179,22 @@ a :hover{
 #tablePositions {
     border-collapse: collapse;
     width: 100%;
-    background-color: rgb(99, 99, 99);
+    background-color: #f6d7d6;
 }
 
 #rowPositions:nth-child(even) {
-    background-color: #939393;
+    background-color: #fdf6f6;
 }
 
 #cellPositions {
-    border: 3px solid #000000;
+    border: none;
     text-align: left;
-    padding: 30px;
+    padding: 10px;
 }
 
 #linkPositions {
-    font-size: 28px;
-    color: white;
+    font-size: 24px;
+    color: #9d282a;
     font-weight: bold;
-    font-family: "Times New Roman";
+    font-family: "Roboto";
 }
