@@ -56,7 +56,7 @@ def set_lang(request):
         if lang_code and check_for_language(lang_code):
             if next:
                 next_trans = translate_url(next, lang_code)
-                response = HttpResponseRedirect(next_trans+"position/1")
+                response = HttpResponseRedirect(next_trans+"position")
             if hasattr(request, 'session'):
                 request.session[LANGUAGE_SESSION_KEY] = lang_code
             response.set_cookie(
