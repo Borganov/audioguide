@@ -111,14 +111,6 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/2.2/topics/i18n/
-# Provide a lists of languages which your site supports.
-LANGUAGES = [
-    ('fr', _('Français')),
-    ('en', _('English')),
-    ('de', _('Deutsch')),
-]
 
 # Set the default language for your site.
 LANGUAGE_CODE = 'fr'
