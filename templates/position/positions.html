@@ -6,16 +6,16 @@
 <!-- Content -->
 {% block content %}
 <div class="container" align="center">
-    <a href="/"><img src="{% static 'imgStatic/Logo.png' %}"></a>
+    <img src="{% static 'imgStatic/Logo.png' %}" style="width: 100%">
 </div>
 
 <table id="tablePositions">
     {% for positionItem in positionItems %}
         <tr id="rowPositions">
-            <td id="cellPositions">
+            <td id="cellPositions" style="width: 90%">
                 <a id="linkPositions" href="{{positionItem.position.id}}">{{ positionItem.position.order|stringformat:".2f"}} {{ positionItem.titre }}</a>
             </td>
-            <td>
+            <td style="width: 10%">
                 <a href="{{positionItem.position.id}}"><i class="far fa-play-circle" style="color: #9d282a; font-size: 24px"></i></a>
             </td>
         </tr>

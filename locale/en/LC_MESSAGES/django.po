@@ -40,7 +40,7 @@ msgstr "About this application"
 
 #: templates/about/about.html:11
 msgid ""
-"Le pont suspendu de Niouc est pont pour canalisation, un bisse siphon, muni "
+"Le pont suspendu de Niouc est un pont pour canalisation, un bisse siphon, muni "
 "d’une passerelle pour piétons. Il a été construit en 1922, à l’aide de "
 "câbles de fils d’acier et de bois, pour son plancher. La fonction initiale "
 "du pont suspendu était de permettre l’entretien de la canalisation se "
