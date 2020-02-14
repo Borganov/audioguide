@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-13 09:40+0100\n"
+"POT-Creation-Date: 2020-02-14 11:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: audioguide/settings.py:118
-msgid "Français"
-msgstr "Französisch"
-
-#: audioguide/settings.py:119
-msgid "English"
-msgstr "Englisch"
-
-#: audioguide/settings.py:120
-msgid "Deutsch"
-msgstr "Deutsch"
 
 #: audioguide/urls.py:27
 msgid "admin/"
@@ -40,8 +28,8 @@ msgstr "Über die Applikation"
 
 #: templates/about/about.html:11
 msgid ""
-"Le pont suspendu de Niouc est un pont pour canalisation, un bisse siphon, muni "
-"d’une passerelle pour piétons. Il a été construit en 1922, à l’aide de "
+"Le pont suspendu de Niouc est un pont pour canalisation, un bisse siphon, "
+"muni d’une passerelle pour piétons. Il a été construit en 1922, à l’aide de "
 "câbles de fils d’acier et de bois, pour son plancher. La fonction initiale "
 "du pont suspendu était de permettre l’entretien de la canalisation se "
 "dressant entre Niouc et Briey, par dessus la Navizence (rivière) et "
@@ -96,85 +84,61 @@ msgstr "Autoren"
 msgid "Version"
 msgstr "Version"
 
-#: templates/activity/activities.html:14 templates/base.html:34
-#: templates/baseOLD.html:30 templates/pages/home_page.html:32
+#: templates/activity/activities.html:9
 msgid "Activités"
 msgstr "Aktivitäten"
 
-#: templates/base.html:35 templates/baseOLD.html:33
-#: templates/pages/home_page.html:27
-msgid "Guide audio"
-msgstr "Audio Guide"
-
-#: templates/base.html:36 templates/baseOLD.html:36
-#: templates/contact/contact.html:11 templates/contact/contact_old.html:13
-#: templates/pages/home_page.html:37
+#: templates/contact/contact.html:9 templates/contact/contact_old.html:13
 msgid "Contact"
 msgstr "Kontakt"
 
-#: templates/base.html:37 templates/baseOLD.html:42
-#: templates/pages/home_page.html:20
-msgid "Langue"
-msgstr "Sprache"
-
-#: templates/base.html:38 templates/baseOLD.html:45
-#: templates/pages/home_page.html:47
-msgid "A propos"
-msgstr "Über uns"
-
-#: templates/baseOLD.html:39 templates/pages/home_page.html:42
-msgid "Accès"
-msgstr "Zugang"
-
-#: templates/contact/contact.html:12
-#, fuzzy
-#| msgid "Vous avez une question à nous poser? Contactez-nous!"
+#: templates/contact/contact.html:10
 msgid "Vous avez une question à nous poser?"
 msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
 
-#: templates/contact/contact.html:13
-#, fuzzy
-#| msgid "Contact"
+#: templates/contact/contact.html:11
 msgid "Contactez-nous!"
 msgstr "Kontakt"
 
-#: templates/contact/contact.html:32
+#: templates/contact/contact.html:47
 msgid "Adresse de l’association"
 msgstr "Postadresse des Vereins :"
 
-#: templates/contact/contact.html:35
+#: templates/contact/contact.html:50
 msgid "Association des amis du pont suspendu de Niouc"
 msgstr ""
 
-#: templates/contact/contact.html:36
+#: templates/contact/contact.html:51
 msgid "Rue des Longs-Prés 40"
 msgstr ""
 
-#: templates/contact/contact.html:46
+#: templates/contact/contact.html:72
 msgid "Horaires d'ouverture"
 msgstr "Öffnungszeiten"
 
-#: templates/contact/contact.html:49
+#: templates/contact/contact.html:75
 msgid "De début avril à fin octobre :"
 msgstr "Von Anfang April bis Ende Oktober :"
 
-#: templates/contact/contact.html:50
+#: templates/contact/contact.html:76
 msgid "uniquement les weekend, de 11h à 18h"
 msgstr "nur am Wochenende von 11 bis 18 Uhr"
 
-#: templates/contact/contact.html:51
+#: templates/contact/contact.html:77
 msgid "Du 18 juillet au 18 août :"
 msgstr "Vom 18. Juli bis 18. August:"
 
-#: templates/contact/contact.html:52
+#: templates/contact/contact.html:78
 msgid "tous les jours sauf le lundi, de 11h à 18h"
 msgstr "jeden Tag ausser montags, von 11h bis 18h"
 
-#: templates/contact/contact.html:62
+#: templates/contact/contact.html:88
 msgid "Localisation du pont :"
 msgstr "Standortdaten der Brücke :"
 
 #: templates/contact/contact_old.html:14
+#, fuzzy
+#| msgid "Vous avez une question à nous poser?"
 msgid "Vous avez une question à nous poser? Contactez nous!"
 msgstr "Haben Sie eine Frage? Treten Sie mit uns in Kontakt!"
 
@@ -185,20 +149,6 @@ msgstr "SENDEN"
 #: templates/contact/contact_old.html:24
 msgid "Adresse administrative de l’association :"
 msgstr "Postadresse des Vereins :"
-
-#: templates/don/don.html:10
-msgid "Faire un don"
-msgstr "Spenden"
-
-#: templates/don/don.html:13
-msgid ""
-"A l’aide du bulletin de versement ci-dessous vous pouvez faire un don, pour "
-"soutenir notre association et développer de nouvelles activités en relation "
-"avec notre pont suspendu :"
-msgstr ""
-"Mit dem unten stehenden Einzahlungsschein können Sie eine Spende zur "
-"Unterstützung unseres Vereins und zur Entwicklung neuer Aktivitäten im "
-"Zusammenhang mit unserer Hängebrücke leisten:"
 
 #: templates/language/language.html:15
 msgid "Langue actuelle :"
@@ -212,78 +162,93 @@ msgstr "Sprache ändern"
 msgid "Enregistrer mon choix"
 msgstr "Speichern"
 
-#: templates/location/location.html:10
-msgid "Localisation et horaires"
-msgstr "Standort und Öffnungszeiten"
+#~ msgid "Français"
+#~ msgstr "Französisch"
 
-#: templates/location/location.html:11
-msgid ""
-"Le pont suspendu de Niouc, se trouve non loin de Sierre, en Valais (Suisse). "
-"Pour vous y rendre en voiture, prenez la sortie Sierre-Est, puis au rond "
-"point, prenez la direction du Val d’Anniviers. Après le village de Niouc, "
-"soyez attentif à la signalisation, l’accès au pont se situe dans une courbe, "
-"par une petite route forestière."
-msgstr ""
-"Die Hängebrücke von Niouc liegt unweit von Sierre im Wallis (Schweiz). Um "
-"mit dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, dann "
-"den Kreisverkehr und fahren zum Val d'Anniviers. Nach dem Dorf Niouc achten "
-"Sie auf die Beschilderung, der Zugang zur Brücke liegt in einer Kurve und "
-"kann über eine kleine Forststraße erreicht werden."
+#~ msgid "English"
+#~ msgstr "Englisch"
 
-#: templates/location/location.html:16
-msgid ""
-"L’accès au site est gratuit. La traversée du pont coûte 5frs. L’intégralité "
-"des bénéfices est affecté à l’entretien du pont et aux projets en cours."
-msgstr ""
-"Der Zugriff auf die Website ist kostenlos. Für das Überqueren der Brücke "
-"werden CHF 5 fällig. Alle Erträge fließen ganzheitlich in die Wartung der "
-"Brücke und in laufende Projekte."
+#~ msgid "Deutsch"
+#~ msgstr "Deutsch"
 
-#: templates/location/location.html:17
-msgid "Le pont est ouvert au public :"
-msgstr ""
+#~ msgid "Guide audio"
+#~ msgstr "Audio Guide"
 
-#: templates/location/location.html:18
+#~ msgid "Langue"
+#~ msgstr "Sprache"
+
+#~ msgid "A propos"
+#~ msgstr "Über uns"
+
+#~ msgid "Accès"
+#~ msgstr "Zugang"
+
+#~ msgid "Faire un don"
+#~ msgstr "Spenden"
+
+#~ msgid ""
+#~ "A l’aide du bulletin de versement ci-dessous vous pouvez faire un don, "
+#~ "pour soutenir notre association et développer de nouvelles activités en "
+#~ "relation avec notre pont suspendu :"
+#~ msgstr ""
+#~ "Mit dem unten stehenden Einzahlungsschein können Sie eine Spende zur "
+#~ "Unterstützung unseres Vereins und zur Entwicklung neuer Aktivitäten im "
+#~ "Zusammenhang mit unserer Hängebrücke leisten:"
+
+#~ msgid "Localisation et horaires"
+#~ msgstr "Standort und Öffnungszeiten"
+
+#~ msgid ""
+#~ "Le pont suspendu de Niouc, se trouve non loin de Sierre, en Valais "
+#~ "(Suisse). Pour vous y rendre en voiture, prenez la sortie Sierre-Est, "
+#~ "puis au rond point, prenez la direction du Val d’Anniviers. Après le "
+#~ "village de Niouc, soyez attentif à la signalisation, l’accès au pont se "
+#~ "situe dans une courbe, par une petite route forestière."
+#~ msgstr ""
+#~ "Die Hängebrücke von Niouc liegt unweit von Sierre im Wallis (Schweiz). Um "
+#~ "mit dem Auto dorthin zu gelangen, nehmen Sie die Ausfahrt Sierre-Est, "
+#~ "dann den Kreisverkehr und fahren zum Val d'Anniviers. Nach dem Dorf Niouc "
+#~ "achten Sie auf die Beschilderung, der Zugang zur Brücke liegt in einer "
+#~ "Kurve und kann über eine kleine Forststraße erreicht werden."
+
+#~ msgid ""
+#~ "L’accès au site est gratuit. La traversée du pont coûte 5frs. "
+#~ "L’intégralité des bénéfices est affecté à l’entretien du pont et aux "
+#~ "projets en cours."
+#~ msgstr ""
+#~ "Der Zugriff auf die Website ist kostenlos. Für das Überqueren der Brücke "
+#~ "werden CHF 5 fällig. Alle Erträge fließen ganzheitlich in die Wartung der "
+#~ "Brücke und in laufende Projekte."
+
 #, fuzzy
-#| msgid "De début avril à fin octobre :"
-msgid "De début avril à fin octobre,"
-msgstr "Von Anfang April bis Ende Oktober :"
+#~| msgid "De début avril à fin octobre :"
+#~ msgid "De début avril à fin octobre,"
+#~ msgstr "Von Anfang April bis Ende Oktober :"
 
-#: templates/location/location.html:19
 #, fuzzy
-#| msgid "uniquement les weekend, de 11h à 18h"
-msgid "uniquement les weekend,"
-msgstr "nur am Wochenende von 11 bis 18 Uhr"
+#~| msgid "uniquement les weekend, de 11h à 18h"
+#~ msgid "uniquement les weekend,"
+#~ msgstr "nur am Wochenende von 11 bis 18 Uhr"
 
-#: templates/location/location.html:20 templates/location/location.html:25
-msgid "de 11h à 18h"
-msgstr "von 11 bis 18 Uhr"
+#~ msgid "de 11h à 18h"
+#~ msgstr "von 11 bis 18 Uhr"
 
-#: templates/location/location.html:23
-msgid "Du 18 juillet au 18 août,"
-msgstr ""
-
-#: templates/location/location.html:24
 #, fuzzy
-#| msgid "tous les jours sauf le lundi,"
-msgid "tous les jours sauf le lundi,"
-msgstr "jeden Tag außer montags,"
+#~| msgid "tous les jours sauf le lundi,"
+#~ msgid "tous les jours sauf le lundi,"
+#~ msgstr "jeden Tag außer montags,"
 
-#: templates/location/location.html:28
-msgid "Coordonnées du pont - Google Map :"
-msgstr "Brückenkoordinaten - Google Map:"
+#~ msgid "Coordonnées du pont - Google Map :"
+#~ msgstr "Brückenkoordinaten - Google Map:"
 
-#: templates/location/location.html:29
-msgid "Coordonnées GPS :"
-msgstr "GPS-Koordinaten:"
+#~ msgid "Coordonnées GPS :"
+#~ msgstr "GPS-Koordinaten:"
 
-#: templates/pages/start.html:12
-msgid "Bienvenue sur le guide audio"
-msgstr "Herzlich willkommen im Audio Guide"
+#~ msgid "Bienvenue sur le guide audio"
+#~ msgstr "Herzlich willkommen im Audio Guide"
 
-#: templates/position/positionsOLD.html:10
-msgid "Points d'intérêts"
-msgstr "Posten"
+#~ msgid "Points d'intérêts"
+#~ msgstr "Posten"
 
 #~ msgid "Messages"
 #~ msgstr "Nachrichten"
