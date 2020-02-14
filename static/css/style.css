@@ -206,6 +206,18 @@ a :hover {
     color: black;
 }
 
+#linkContact {
+    background-color: #f6d7d6;
+    color: #9d282a;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
 /* positions.html */
 #tablePositions {
     border-collapse: collapse;
