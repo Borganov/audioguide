@@ -9,9 +9,8 @@
 <div align="center">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12"><img src="{% static 'imgStatic/Logo.png' %}" width="85%"/>
+            <div class="col-sm-12"><img src="{% static 'imgStatic/Logo.png' %}" width="85%"/></div>
         </div>
-    </div>
 
     <form action="set_lang" method="post">
         {% for language in languages %}
@@ -25,6 +24,21 @@
         </div>
         {% endfor %}
     </form>
+    </div>
+</div>
+
+<!-- Navigation -->
+<div class="container" style="background-color: #f6d7d6; height: 60px; margin-top: 50px;">
+    <div class="row" style="padding-bottom: 20px; padding-top: 20px">
+        <div class="col-xs-4" align="center">
+            <a href="/activity"><i class="fas fa-hiking" style="color: #9d282a; font-size: 24px;"></i></a>
+        </div>
+        <div class="col-xs-4" align="center">
+            <a href="/contact"><i class="fas fa-mail-bulk" style="color: #9d282a; font-size: 24px;"></i></a>
+        </div>
+        <div class="col-xs-4" align="center">
+            <a href="/about"><i class="fas fa-info-circle" style="color: #9d282a; font-size: 24px;"></i></a>
+        </div>
     </div>
 </div>
 {% endblock %}
