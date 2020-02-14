@@ -1,128 +1,146 @@
 /* Body Styles */
-body{
-  color: #fff;
-  font-size: 16px;
-  padding-top: 70px;
-  padding-bottom: 20px;
+body {
+    color: #fff;
+    font-size: 16px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
+
 a {
-  color: mediumblue;
+    color: mediumblue;
 }
-a :hover{
-  color: darkblue;
+
+a :hover {
+    color: darkblue;
 }
+
 .bodyBG {
-  background: #C7342D;
+    background: #C7342D;
 }
 
 /* Color Styles */
 .icon-white {
-  color: white;
+    color: white;
 }
+
 .textDarkGray {
-  color: darkgray;
+    color: darkgray;
 }
+
 .navbar-brand {
-  color: darkgray;
+    color: darkgray;
 }
+
 .textBlack {
-  color: black;
+    color: black;
 }
+
 .darker-color {
-  color: #9d282a;
+    color: #9d282a;
 }
+
 .main-color {
-  background-color: #222222;
+    background-color: #222222;
 }
+
 .h1ActivityList {
-  color: white;
+    color: white;
 }
+
 .h2ActivityList {
-  color: #C7342D;
+    color: #C7342D;
 }
 
 /* Jumbotron Styles */
 .jumbotron {
-  padding-top: 5px;
-  padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Semantic Tag Styles */
 .content-height {
-  min-height: calc(100%-40px);
+    min-height: calc(100% - 40px);
 }
-
 /* Padding, margin Styles */
 .neg-mrg {
-  margin-top: -20px;
+    margin-top: -20px;
 }
+
 .neg-mrg-btm {
-  margin-bottom: -20px;
+    margin-bottom: -20px;
 }
+
 .top-buffer {
-  margin-top: 15px;
+    margin-top: 15px;
 }
+
 .pad-btm {
-  padding-bottom: 25px;
+    padding-bottom: 25px;
 }
+
 .btm-content-padding {
-  padding-bottom: 110px;
+    padding-bottom: 110px;
 }
 
 /* Image styles */
 .imageActivity {
-  float: left;
-  padding-right: 10px;
-  width: 30%;
+    float: left;
+    padding-right: 10px;
+    width: 30%;
 }
 
 /* Alignment Styles */
 .centeredDIV {
-  align-content: center;
+    align-content: center;
 }
 
 /* Activity or position specific Styles */
 .divActivityList {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
 }
+
 .tableWidthActivity {
-  width: 100%;
+    width: 100%;
 }
+
 .trActivityList {
-  background-color: white;
-  border: 20px solid black;
-  border-color: #C7342D;
-  padding-top: 15px;
-  padding-bottom: 15px;
+    background-color: white;
+    border: 20px solid black;
+    border-color: #C7342D;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
 .tdActivityList {
-  padding-right: 15px;
-  padding-left: 15px;
-  text-align: justify;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: justify;
 }
 
 /* Button Styles */
 .btn-xxl {
-  color: black;
-  background-color: lightgray;
-  padding: 20px 26px;
-  font-size: 35px;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 8px;
+    color: black;
+    background-color: lightgray;
+    padding: 20px 26px;
+    font-size: 35px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
 }
+
 .btn-danger:hover {
-  background-color: #9d282a;
-  border-color: lightgray;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 8px;
-  text-decoration: none;
+    background-color: #9d282a;
+    border-color: lightgray;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    text-decoration: none;
 }
+
 /*.btn {
   position: relative;
   width: 200px;
@@ -135,67 +153,79 @@ a :hover{
   background: gray;
 }*/
 .btnStart {
-  position: relative;
-  height: 100px;
-  margin-bottom: 20px;
-  padding-top: 33px;
-  text-align: center;
-  font-size: 150%;
-  color: #333;
-  background: gray;
-  text-decoration: none;
+    position: relative;
+    height: 100px;
+    margin-bottom: 20px;
+    padding-top: 33px;
+    text-align: center;
+    font-size: 150%;
+    color: #333;
+    background: gray;
+    text-decoration: none;
 }
 
 /* Navbar Styles */
 .navbar-hamburger {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Position_List Styles */
 .postition_title {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .imagePositionList {
-  float: left;
-  padding-right: 10px;
-  max-width: 100%;
-  height: 100px;
+    float: left;
+    padding-right: 10px;
+    max-width: 100%;
+    height: 100px;
 }
 
-.test{
-  background-color: green;
+.test {
+    background-color: green;
 }
 
 /*Panel style*/
 .panel h3 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
+
 /*Contact form*/
 .contactForm_field {
-  width: 100%;
+    width: 100%;
+}
+
+.activity-panel {
+    background-color: #fff;
+}
+
+.activity-panel p{
+    color: black;
+}
+.activity-panel p :hover{
+    color: black;
 }
 
 /* positions.html */
 #tablePositions {
     border-collapse: collapse;
     width: 100%;
-    background-color: rgb(99, 99, 99);
+    background-color: #f6d7d6;
 }
 
 #rowPositions:nth-child(even) {
-    background-color: #939393;
+    background-color: #fdf6f6;
 }
 
 #cellPositions {
-    border: 3px solid #000000;
+    border: none;
     text-align: left;
-    padding: 30px;
+    padding: 10px;
 }
 
 #linkPositions {
-    font-size: 28px;
-    color: white;
+    font-size: 24px;
+    color: #9d282a;
     font-weight: bold;
-    font-family: "Times New Roman";
+    font-family: "Roboto";
 }
