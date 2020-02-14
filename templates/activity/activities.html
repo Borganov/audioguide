@@ -5,12 +5,12 @@
 
 {% block content %}
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-xs-10 col-xs-offset-1">
             <h1 class="postition_title">{% trans "Activités" %}</h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+        <div class="col-xs-10 col-xs-offset-1">
             {% regroup activityItems by activity.prestataire as grouped %}
             {% for group in grouped %}
 
@@ -18,14 +18,14 @@
                 {% for activity in group.list %}
                     <a href="{{ activity.id }}">
                         <div class="row">
-                            <div class="panel panel-default activity-panel" style="">
+                            <div class="panel panel-default activity-panel " >
                                 <div class="row">
-                                    <div class="col-sm-3">
-                                        <img src="{{ baseUrl }}/{{ activity.activity.img }}" style="width:100%"/>
+                                    <div class="col-sm-3 col-xs-12">
+                                        <img src="{{ baseUrl }}/{{ activity.activity.img }}" style="width:100%;"/>
                                     </div>
-                                    <div class="col-sm-9">
-                                        <h2 class="h2ActivityList">{{ activity.title }}</h2>
-                                        <p>{{ activity.description|truncatechars_html:300 }}</p>
+                                    <div class="col-sm-9 col-xs-12">
+                                        <h2 class="h2ActivityList" style="margin-top: 10px;">{{ activity.title }}</h2>
+                                        <p style="padding:0 12px;">{{ activity.description|truncatechars_html:200 }}</p>
                                     </div>
                                 </div>
                             </div>
