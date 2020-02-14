@@ -36,7 +36,7 @@ def accueil(request):
 
 def start(request):
     lang = Language.objects.get(abreviation=request.LANGUAGE_CODE)
-    languages = Language.objects.all()
+    languages = Language.objects.filter(isActive=True   )
     context = {
         'languages': languages,
     }

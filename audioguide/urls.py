@@ -29,7 +29,6 @@ urlpatterns += i18n_patterns(
     path('accueil/', include('start.urls')),
     path('activity/', include('activity.urls')),
     path('contact/', include('contact.urls')),
-    path('don/', include('don.urls')),
     path('location/', include('location.urls')),
     path('position/', include('position.urls')),
     path('set_lang/', include('start.urls')),
